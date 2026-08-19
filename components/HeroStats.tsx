@@ -11,7 +11,7 @@ export default function HeroStats() {
       targetNumber: 500,
       prefix: "",
       suffix: "+",
-      label: "Gift Shop Spaces Listed",
+      label: "Supermarket Spaces Listed",
       icon: <Layers className="w-6 h-6 text-[#F4E409] group-hover:scale-110 transition-transform duration-300" />,
     },
     {
@@ -19,7 +19,7 @@ export default function HeroStats() {
       targetNumber: 1000,
       prefix: "",
       suffix: "+",
-      label: "Gift Brands Connected",
+      label: "Product Brands Connected",
       icon: <Store className="w-6 h-6 text-[#F4E409] group-hover:scale-110 transition-transform duration-300" />,
     },
     {

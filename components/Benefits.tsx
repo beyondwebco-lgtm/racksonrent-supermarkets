@@ -18,7 +18,7 @@ export default function Benefits() {
             A Simple Win for Both Sides
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Discover how space sharing delivers immediate advantages to both gift shop owners and gift entrepreneurs.
+            Discover how space sharing delivers immediate advantages to both supermarket owners and product brands.
           </p>
         </div>
 

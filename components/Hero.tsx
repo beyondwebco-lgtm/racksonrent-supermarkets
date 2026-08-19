@@ -51,9 +51,9 @@ export default function Hero({ onSelectRole }: HeroProps) {
   };
 
   const benefitItems = [
-    { text: "Extra Gift Shop Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#6B0F1A]" /> },
-    { text: "Connect with Local Brands & Creators.", icon: <ShieldCheck className="w-4 h-4 text-[#6B0F1A]" /> },
-    { text: "Verified, Trusted Gift Shop Locations.", icon: <Lock className="w-4 h-4 text-[#6B0F1A]" /> },
+    { text: "Extra Retail Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#6B0F1A]" /> },
+    { text: "Connect with Local & Growing Brands.", icon: <ShieldCheck className="w-4 h-4 text-[#6B0F1A]" /> },
+    { text: "Verified, Trusted Supermarket Locations.", icon: <Lock className="w-4 h-4 text-[#6B0F1A]" /> },
     { text: "Hassle-Free Direct Space Sharing.", icon: <CheckCircle2 className="w-4 h-4 text-[#6B0F1A]" /> },
   ];
 
@@ -66,19 +66,19 @@ export default function Hero({ onSelectRole }: HeroProps) {
           <div className="lg:col-span-7 space-y-6">
             <div>
               <span className="inline-flex items-center rounded-full bg-[#FFF6A3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-                For Gift Shop Owners & Gift Entrepreneurs
+                For Supermarket Owners & Product Brands
               </span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-[#6B0F1A] leading-[1.15]">
               Give Your Products a Place{" "}
               <span className="bg-[#F4E409] text-[#3D0710] px-3 py-1 rounded-xl inline-block mt-1 border border-[#6B0F1A]/20">
-                Inside a Busy Gift Shop.
+                Inside a Busy Supermarket.
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-[#5F5F5F] leading-relaxed max-w-2xl font-medium">
-              Rent display space inside trusted gift shops and put your gifts, handmade products, stationery, lifestyle products, accessories, and specialty items directly in front of shoppers.
+              Rent display space inside trusted supermarkets and retail stores and put your food, beverage, FMCG, personal-care, household, lifestyle, and specialty products directly in front of active shoppers.
             </p>
 
             {/* 4 Small Benefit Items */}
@@ -101,7 +101,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
               <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-4 z-10">
                 
-                {/* Button 1: Find Gift Shop Space (For Gift Brands) */}
+                {/* Button 1: Find Supermarket Space (For Brands & Entrepreneurs) */}
                 <button
                   type="button"
                   onClick={() => handleRoleClick("wellness")}
@@ -119,15 +119,15 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   >
                     <div className="flex items-center gap-2 text-base font-black">
                       <Utensils className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                      <span>Find Gift Shop Space</span>
+                      <span>Find Supermarket Space</span>
                     </div>
                     <span className="text-[11px] font-bold uppercase tracking-wider opacity-80 mt-0.5">
-                      For Gift Brands & Entrepreneurs
+                      For Brands & Entrepreneurs
                     </span>
                   </div>
                 </button>
 
-                {/* Button 2: List Your Gift Shop Space */}
+                {/* Button 2: List Your Store Space */}
                 <button
                   type="button"
                   onClick={() => handleRoleClick("gym-owner")}
@@ -145,10 +145,10 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   >
                     <div className="flex items-center gap-2 text-base font-black">
                       <Store className="w-5 h-5 text-[#FFF6A3] group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                      <span>List Your Gift Shop Space</span>
+                      <span>List Your Store Space</span>
                     </div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#F4E409] mt-0.5">
-                      For Gift Shop Owners
+                      For Supermarket Owners
                     </span>
                   </div>
                 </button>

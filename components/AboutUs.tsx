@@ -46,27 +46,27 @@ export default function AboutUs() {
   ];
 
   const whyChooseItems = [
-    "India's First Gift Shop Display Space Marketplace",
-    "Innovative Gift Store Space-Sharing Model",
-    "Affordable Retail Expansion for Gift Brands",
-    "High Daily Footfall Gift Shop Locations",
+    "India's First Supermarket Display Space Marketplace",
+    "Innovative Retail Store Space-Sharing Model",
+    "Affordable Retail Expansion for Product Brands",
+    "High Daily Footfall Supermarket Locations",
     "Flexible Daily, Weekly & Monthly Rentals",
-    "Verified Gift Shops & Display Cabinets",
+    "Verified Supermarkets & Display Racks",
     "Direct Communication & Transparent Agreements",
     "No Expensive Standalone Retail Leases",
-    "Dedicated Gift Brand & Seller Support",
-    "Scalable Across Multiple Local Gift Outlets",
+    "Dedicated Product Brand & Seller Support",
+    "Scalable Across Multiple Local Supermarket Outlets",
   ];
 
   const venueTypes = [
-    "Gift Shops",
-    "Handicraft Boutiques",
-    "Souvenir Stores",
-    "Lifestyle Gift Outlets",
-    "Custom Gift Boutiques",
-    "Artisan Gift Hubs",
-    "Curio Shops",
-    "Craft Stores",
+    "Supermarkets",
+    "Grocery Stores",
+    "Convenience Stores",
+    "Hypermarkets",
+    "Retail Outlets",
+    "FMCG Stores",
+    "Department Stores",
+    "Specialty Marts",
   ];
 
 

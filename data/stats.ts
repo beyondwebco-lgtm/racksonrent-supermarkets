@@ -2,13 +2,13 @@ export const HERO_STATS = [
   {
     id: "spaces",
     number: "500+",
-    label: "Gift Shop Spaces Listed",
+    label: "Supermarket Spaces Listed",
     iconName: "Layers"
   },
   {
     id: "brands",
     number: "1000+",
-    label: "Gift Brands Connected",
+    label: "Product Brands Connected",
     iconName: "Store"
   },
   {
@@ -20,10 +20,10 @@ export const HERO_STATS = [
 ];
 
 export const TRUST_STRIP_ITEMS = [
-  { label: "Growing Gift Shop Partner Network", iconName: "Store" },
-  { label: "1000+ Gift Entrepreneurs", iconName: "Gift" },
-  { label: "Pan India Gift Shop Network", iconName: "MapPin" },
-  { label: "Verified Gift Shop Display Spaces", iconName: "ShieldCheck" }
+  { label: "Growing Supermarket Partner Network", iconName: "Store" },
+  { label: "1000+ Product Brands & Entrepreneurs", iconName: "Gift" },
+  { label: "Pan India Supermarket Network", iconName: "MapPin" },
+  { label: "Verified Supermarket Display Spaces", iconName: "ShieldCheck" }
 ];
 
 

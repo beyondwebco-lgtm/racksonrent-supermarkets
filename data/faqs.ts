@@ -7,42 +7,42 @@ export interface FAQItem {
 export const EIGHT_FAQS: FAQItem[] = [
   {
     id: "faq-1",
-    question: "What is Racks on Rent for Gift Shops?",
-    answer: "Racks on Rent connects gift shop owners who have unused shelves, counters, display corners, or retail spaces with gift entrepreneurs, creators, and growing brands looking for physical product visibility."
+    question: "What is Racks on Rent for Supermarkets?",
+    answer: "Racks on Rent connects supermarket and retail-store owners who have available shelves, racks, counters, display areas, or promotional spaces with brands looking for physical product visibility."
   },
   {
     id: "faq-2",
-    question: "Who can list a gift shop space?",
-    answer: "Gift shop owners and retail businesses with available shelves, counters, racks, showcases, or display areas can list their spaces."
+    question: "Who can list supermarket space?",
+    answer: "Supermarket owners, retail stores, grocery stores, convenience stores, and other suitable retail businesses can list available display spaces."
   },
   {
     id: "faq-3",
-    question: "Who can rent space inside a gift shop?",
-    answer: "Gift brands, handmade-product sellers, artists, creators, stationery brands, accessory brands, lifestyle businesses, and small entrepreneurs can rent display space."
+    question: "Who can rent space inside a supermarket?",
+    answer: "FMCG brands, food companies, beverage brands, wellness businesses, personal-care brands, household-product companies, local manufacturers, and entrepreneurs can rent display space."
   },
   {
     id: "faq-4",
-    question: "How do gift shop owners benefit?",
-    answer: "Gift shop owners can generate additional income by renting unused retail display space while introducing new products to their customers."
+    question: "How do supermarket owners benefit?",
+    answer: "Supermarket owners can generate additional income from unused retail space while introducing new products and brands to their shoppers."
   },
   {
     id: "faq-5",
     question: "How do brands get started?",
-    answer: "Brands can browse available gift-shop spaces, select a suitable location, and connect with the shop owner through the platform."
+    answer: "Brands can browse available supermarket spaces, select a suitable location, and connect with the store owner through the platform."
   },
   {
     id: "faq-6",
     question: "How are payments and rental terms handled?",
-    answer: "Rental duration, pricing, payment arrangements, and display terms can be discussed and agreed upon between the participating gift shop owner and brand."
+    answer: "Rental duration, pricing, payment arrangements, product placement, and display terms can be discussed and agreed upon between the participating supermarket owner and brand."
   },
   {
     id: "faq-7",
-    question: "What types of gift-shop spaces are available?",
-    answer: "Available spaces may include shelves, counters, racks, showcases, tabletop displays, wall displays, checkout areas, and premium product corners."
+    question: "What types of supermarket spaces are available?",
+    answer: "Available spaces may include shelves, racks, counters, end-cap displays, checkout areas, promotional racks, refrigerated displays, tabletop spaces, and premium product corners."
   },
   {
     id: "faq-8",
     question: "Which cities are supported?",
-    answer: "Racks on Rent is designed to support gift shops and brands across India, with the partner network expanding city by city."
+    answer: "Racks on Rent is designed to support supermarkets, retail stores, and brands across India, with the partner network expanding city by city."
   }
 ];

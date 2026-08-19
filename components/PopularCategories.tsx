@@ -80,13 +80,13 @@ export default function PopularCategories() {
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-flex rounded-full bg-[#FFF6A3] px-4 py-1.5 text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            Gift Shop Display Categories
+            Supermarket Display Categories
           </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
-            Popular Gift Product Categories
+            Popular Supermarket Product Categories
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Explore high-demand gifts, handmade products, stationery, home decor, accessories, lifestyle products, personalized items, and specialty products displayed inside gift shops across India.
+            Explore high-demand packaged foods, beverages, wellness products, personal-care items, household products, specialty foods, and emerging consumer brands displayed inside supermarkets across India.
           </p>
         </div>
 

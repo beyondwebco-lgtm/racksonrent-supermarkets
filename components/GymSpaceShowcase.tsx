@@ -165,14 +165,14 @@ export default function GymSpaceShowcase({
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="inline-flex rounded-full bg-[#FFF6A3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            Gift Shop Display Opportunities
+            Supermarket Display Opportunities
           </span>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
-            <span className="hidden sm:inline">Choose What You Want to Display Inside a Gift Shop</span>
-            <span className="sm:hidden">Explore Gift Shop Display Formats</span>
+            <span className="hidden sm:inline">Choose What You Want to Display Inside a Supermarket</span>
+            <span className="sm:hidden">Explore Supermarket Display Formats</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Explore gift-shop shelves, checkout counters, tabletop displays, wall racks, showcase spaces, premium product corners, and other retail display opportunities inside active gift stores.
+            Explore supermarket shelves, checkout counters, end-cap displays, refrigerated sections, promotional racks, tabletop displays, grab-and-go areas, and premium product spaces inside active retail stores.
           </p>
         </div>
 

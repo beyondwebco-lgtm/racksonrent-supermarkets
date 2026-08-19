@@ -16,9 +16,9 @@ interface SpaceSearchProps {
 
 export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
   const [location, setLocation] = useState("");
-  const [spaceType, setSpaceType] = useState("Gift Shop Counter Display");
+  const [spaceType, setSpaceType] = useState("Supermarket Shelf Display");
   const [rackSize, setRackSize] = useState("Small Display");
-  const [category, setCategory] = useState("Handmade Gifts & Crafts");
+  const [category, setCategory] = useState("Packaged Foods & FMCG");
 
 
   const handleSearchSubmit = (e: React.FormEvent) => {
@@ -66,7 +66,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
             <div>
               <label className="block text-xs font-bold text-[#6B0F1A] uppercase tracking-wider mb-1 flex items-center gap-1" htmlFor="search-space-type">
                 <Layers className="w-3.5 h-3.5 text-[#6B0F1A]" />
-                <span>Space Type</span>
+                <span>Supermarket Display</span>
               </label>
               <select
                 id="search-space-type"

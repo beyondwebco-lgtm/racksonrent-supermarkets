@@ -11,8 +11,8 @@ export const SITE_CONFIG = {
   email: "racksonrent@gmail.com",
   mailtoLink: "mailto:racksonrent@gmail.com",
   address: "India",
-  topBarTextLeft: "For Gift Shop Owners & Gift Entrepreneurs",
-  topBarTextCenter: "Verified Gift Shop Spaces. Trusted Partners.",
+  topBarTextLeft: "For Supermarket Owners & Product Brands",
+  topBarTextCenter: "Verified Retail Spaces. Trusted Partners.",
 };
 
 export const NAV_LINKS = [

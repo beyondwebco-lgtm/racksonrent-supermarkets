@@ -32,7 +32,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
             Simple & Transparent Options
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            No hidden commissions. Direct, transparent terms tailored for gift shop owners and gift entrepreneurs.
+            No hidden commissions. Direct, transparent terms tailored for supermarket owners and product brands.
           </p>
         </div>
 

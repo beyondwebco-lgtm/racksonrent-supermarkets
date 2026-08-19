@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
             Why Choose Racks on Rent?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            We provide a transparent platform designed to simplify gift-shop display-space discovery, rental, and direct collaboration between gift shop owners and growing brands.
+            We provide a transparent platform designed to simplify supermarket display-space discovery, rental, and direct collaboration between retail stores and growing product brands.
           </p>
 
         </div>

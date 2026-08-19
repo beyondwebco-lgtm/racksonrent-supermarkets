@@ -28,10 +28,10 @@ export default function EnquiryForm({ selectedRole = "gym-owner", initialSearchV
     brandName: "",
     phone: "",
     city: initialSearchValues?.location || "",
-    availableSpace: initialSearchValues?.spaceType || "Gift Shop Counter Display",
-    requiredSpace: initialSearchValues?.spaceType || "Gift Shop Counter Display",
+    availableSpace: initialSearchValues?.spaceType || "Supermarket Shelf Display",
+    requiredSpace: initialSearchValues?.spaceType || "Supermarket Shelf Display",
     rackSize: initialSearchValues?.rackSize || "Small Display",
-    category: initialSearchValues?.category || "Handmade Gifts & Crafts",
+    category: initialSearchValues?.category || "Packaged Foods & FMCG",
     message: "",
   });
 
@@ -59,7 +59,7 @@ export default function EnquiryForm({ selectedRole = "gym-owner", initialSearchV
   const validate = () => {
     const newErrors: Record<string, string> = {};
     if (!formData.fullName.trim()) newErrors.fullName = "Full Name is required";
-    if (role === "gym-owner" && !formData.bakeryName.trim()) newErrors.bakeryName = "Gift Shop Name is required";
+    if (role === "gym-owner" && !formData.bakeryName.trim()) newErrors.bakeryName = "Supermarket / Store Name is required";
     if (role === "wellness" && !formData.brandName.trim()) newErrors.brandName = "Brand Name is required";
     if (!formData.phone.trim()) newErrors.phone = "Phone Number is required";
     if (!formData.city.trim() && !initialSearchValues?.location) newErrors.city = "City is required";
@@ -72,19 +72,19 @@ export default function EnquiryForm({ selectedRole = "gym-owner", initialSearchV
     if (!validate()) return;
 
     const activeCity = formData.city || initialSearchValues?.location || "";
-    const activeSpaceType = formData.availableSpace || initialSearchValues?.spaceType || "Gift Shop Counter Display";
-    const activeRequiredSpace = formData.requiredSpace || initialSearchValues?.spaceType || "Gift Shop Counter Display";
+    const activeSpaceType = formData.availableSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display";
+    const activeRequiredSpace = formData.requiredSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display";
     const activeRackSize = formData.rackSize || initialSearchValues?.rackSize || "Small Display";
-    const activeCategory = formData.category || initialSearchValues?.category || "Handmade Gifts & Crafts";
+    const activeCategory = formData.category || initialSearchValues?.category || "Packaged Foods & FMCG";
 
-    let roleText = "Gift Shop Owner";
+    let roleText = "Supermarket Owner";
     let detailsText = "";
 
     if (role === "gym-owner") {
-      roleText = "Gift Shop Owner";
-      detailsText = `Name: ${formData.fullName}\nGift Shop Name: ${formData.bakeryName}\nPhone: ${formData.phone}\nCity: ${activeCity}\nAvailable Space: ${activeSpaceType}\nDisplay Space Size: ${activeRackSize}\nMessage: ${formData.message || "N/A"}`;
+      roleText = "Supermarket Owner";
+      detailsText = `Name: ${formData.fullName}\nSupermarket Name: ${formData.bakeryName}\nPhone: ${formData.phone}\nCity: ${activeCity}\nAvailable Space: ${activeSpaceType}\nDisplay Space Size: ${activeRackSize}\nMessage: ${formData.message || "N/A"}`;
     } else if (role === "wellness") {
-      roleText = "Gift Entrepreneur";
+      roleText = "Product Brand / Entrepreneur";
       detailsText = `Name: ${formData.fullName}\nBrand Name: ${formData.brandName}\nPhone: ${formData.phone}\nCity: ${activeCity}\nProduct Category: ${activeCategory}\nRequired Space: ${activeRequiredSpace}\nPreferred Space Size: ${activeRackSize}\nMessage: ${formData.message || "N/A"}`;
     } else {
       roleText = "General Enquiry";
@@ -93,7 +93,7 @@ export default function EnquiryForm({ selectedRole = "gym-owner", initialSearchV
 
     const messageText = `Hello Racks on Rent,
 
-I am interested in gift shop display space opportunities.
+I am interested in supermarket display space opportunities.
 
 Role: ${roleText}
 ${detailsText}`;
@@ -119,7 +119,7 @@ ${detailsText}`;
             Tell Us What You Are Looking For
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Choose your role, enter your gift shop or product details, and continue directly on WhatsApp.
+            Choose your role, enter your supermarket or product details, and continue directly on WhatsApp.
           </p>
         </div>
 
@@ -136,7 +136,7 @@ ${detailsText}`;
               }`}
             >
               <Store className="w-4 h-4" />
-              <span>Gift Shop Owner</span>
+              <span>Supermarket Owner</span>
             </button>
 
             <button
@@ -149,7 +149,7 @@ ${detailsText}`;
               }`}
             >
               <Utensils className="w-4 h-4" />
-              <span>Gift Entrepreneur</span>
+              <span>Brand / Food Entrepreneur</span>
             </button>
 
             <button
@@ -197,11 +197,11 @@ ${detailsText}`;
               {errors.fullName && <p className="text-xs text-red-600 mt-1 font-semibold">{errors.fullName}</p>}
             </div>
 
-            {/* Gift Shop Owner specific field */}
+            {/* Supermarket Owner specific field */}
             {role === "gym-owner" && (
               <div>
                 <label className="block text-xs font-bold text-[#6B0F1A] uppercase tracking-wider mb-1.5" htmlFor="bakeryName">
-                  Gift Shop Name *
+                  Supermarket / Store Name *
                 </label>
                 <input
                   id="bakeryName"
@@ -209,7 +209,7 @@ ${detailsText}`;
                   type="text"
                   value={formData.bakeryName}
                   onChange={handleChange}
-                  placeholder="e.g. The Gift House"
+                  placeholder="e.g. FreshMart Supermarket"
                   className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
                     errors.bakeryName ? "border-red-500 bg-red-50/30" : ""
                   }`}
@@ -218,11 +218,11 @@ ${detailsText}`;
               </div>
             )}
 
-            {/* Gift Entrepreneur specific field */}
+            {/* Product Brand Entrepreneur specific field */}
             {role === "wellness" && (
               <div>
                 <label className="block text-xs font-bold text-[#6B0F1A] uppercase tracking-wider mb-1.5" htmlFor="brandName">
-                  Brand or Gift Business Name *
+                  Brand Name *
                 </label>
                 <input
                   id="brandName"
@@ -230,7 +230,7 @@ ${detailsText}`;
                   type="text"
                   value={formData.brandName}
                   onChange={handleChange}
-                  placeholder="e.g. Handmade Keepsakes Co."
+                  placeholder="e.g. FreshBites Foods"
                   className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
                     errors.brandName ? "border-red-500 bg-red-50/30" : ""
                   }`}
@@ -278,26 +278,26 @@ ${detailsText}`;
               </div>
             </div>
 
-            {/* Gift Shop Owner Space & Size Fields */}
+            {/* Supermarket Owner Space & Size Fields */}
             {role === "gym-owner" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-[#6B0F1A] uppercase tracking-wider mb-1.5" htmlFor="availableSpace">
-                    Available Display Space Type
+                    Available Retail Space Type
                   </label>
                   <select
                     id="availableSpace"
                     name="availableSpace"
-                    value={formData.availableSpace || initialSearchValues?.spaceType || "Gift Shop Counter Display"}
+                    value={formData.availableSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display"}
                     onChange={handleChange}
                     className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
                   >
-                    <option value="Gift Shop Counter Display">Gift Shop Counter Display</option>
-                    <option value="Eye-Level Gift Shelf">Eye-Level Gift Shelf</option>
-                    <option value="Checkout Counter Space">Checkout Counter Space</option>
-                    <option value="Glass Showcase Cabinet">Glass Showcase Cabinet</option>
-                    <option value="Tabletop Display">Tabletop Display</option>
-                    <option value="Entrance & Window Display">Entrance & Window Display</option>
+                    <option value="Supermarket Shelf Display">Supermarket Shelf Display</option>
+                    <option value="End-Cap Display">End-Cap Display</option>
+                    <option value="Checkout Counter Display">Checkout Counter Display</option>
+                    <option value="Refrigerated Display Space">Refrigerated Display Space</option>
+                    <option value="Tabletop & Grab-and-Go Rack">Tabletop & Grab-and-Go Rack</option>
+                    <option value="Entrance & Feature Corner">Entrance & Feature Corner</option>
                     <option value="Custom Space">Custom Space</option>
                   </select>
                 </div>
@@ -323,7 +323,7 @@ ${detailsText}`;
               </div>
             )}
 
-            {/* Gift Entrepreneur Category, Space & Size Fields */}
+            {/* Product Brand Entrepreneur Category, Space & Size Fields */}
             {role === "wellness" && (
               <div className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -334,16 +334,16 @@ ${detailsText}`;
                     <select
                       id="category"
                       name="category"
-                      value={formData.category || initialSearchValues?.category || "Handmade Gifts & Crafts"}
+                      value={formData.category || initialSearchValues?.category || "Packaged Foods & FMCG"}
                       onChange={handleChange}
                       className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
                     >
-                      <option value="Handmade Gifts & Crafts">Handmade Gifts & Crafts</option>
-                      <option value="Personalized Gifts & Custom Products">Personalized Gifts & Custom Products</option>
-                      <option value="Stationery & Journaling">Stationery & Journaling</option>
-                      <option value="Home Decor & Lifestyle Gifts">Home Decor & Lifestyle Gifts</option>
-                      <option value="Jewellery, Accessories & Fashion Gifts">Jewellery, Accessories & Fashion Gifts</option>
-                      <option value="Kids Gifts, Toys & Creative Products">Kids Gifts, Toys & Creative Products</option>
+                      <option value="Packaged Foods & FMCG">Packaged Foods & FMCG</option>
+                      <option value="Beverages & Ready-to-Drink Products">Beverages & Ready-to-Drink Products</option>
+                      <option value="Healthy Foods & Wellness Products">Healthy Foods & Wellness Products</option>
+                      <option value="Personal Care & Beauty">Personal Care & Beauty</option>
+                      <option value="Household & Cleaning Products">Household & Cleaning Products</option>
+                      <option value="Specialty Foods & Local Brands">Specialty Foods & Local Brands</option>
                     </select>
                   </div>
 
@@ -354,16 +354,16 @@ ${detailsText}`;
                     <select
                       id="requiredSpace"
                       name="requiredSpace"
-                      value={formData.requiredSpace || initialSearchValues?.spaceType || "Gift Shop Counter Display"}
+                      value={formData.requiredSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display"}
                       onChange={handleChange}
                       className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
                     >
-                      <option value="Gift Shop Counter Display">Gift Shop Counter Display</option>
-                      <option value="Eye-Level Gift Shelf">Eye-Level Gift Shelf</option>
-                      <option value="Checkout Counter Space">Checkout Counter Space</option>
-                      <option value="Glass Showcase Cabinet">Glass Showcase Cabinet</option>
-                      <option value="Tabletop Display">Tabletop Display</option>
-                      <option value="Entrance & Window Display">Entrance & Window Display</option>
+                      <option value="Supermarket Shelf Display">Supermarket Shelf Display</option>
+                      <option value="End-Cap Display">End-Cap Display</option>
+                      <option value="Checkout Counter Display">Checkout Counter Display</option>
+                      <option value="Refrigerated Display Space">Refrigerated Display Space</option>
+                      <option value="Tabletop & Grab-and-Go Rack">Tabletop & Grab-and-Go Rack</option>
+                      <option value="Entrance & Feature Corner">Entrance & Feature Corner</option>
                       <option value="Custom Space">Custom Space</option>
                     </select>
                   </div>
@@ -401,7 +401,7 @@ ${detailsText}`;
                 rows={3}
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Share your available gift-shop space, product category, rental preference, or any additional requirements..."
+                placeholder="Share your available supermarket space, product category, rental preference, or any additional requirements..."
                 className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
               />
             </div>
@@ -418,7 +418,7 @@ ${detailsText}`;
 
               <p className="text-xs text-[#5F5F5F] text-center mt-3 flex items-center justify-center gap-1 font-semibold">
                 <AlertCircle className="w-3.5 h-3.5 text-[#6B0F1A]" />
-                <span>Your information is used only to respond to your gift shop space enquiry.</span>
+                <span>Your information is used only to respond to your supermarket space enquiry.</span>
               </p>
             </div>
           </form>

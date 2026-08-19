@@ -148,7 +148,7 @@ export default function Header({ onSelectRole }: HeaderProps) {
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[#F4E409] px-5 py-2.5 text-xs xl:text-sm font-extrabold text-[#3D0710] transition-all hover:bg-[#3D0710] hover:text-[#F4E409] shadow-sm hover:shadow-md border border-[#6B0F1A]/20 cursor-pointer active:scale-95 whitespace-nowrap"
           >
             <Store className="w-4 h-4" />
-            <span>List Your Gift Shop Space</span>
+            <span>List Your Store Space</span>
           </button>
         </div>
 
@@ -160,7 +160,7 @@ export default function Header({ onSelectRole }: HeaderProps) {
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#F4E409] text-[#3D0710] text-xs font-extrabold shadow-xs hover:bg-[#3D0710] hover:text-[#F4E409] transition-colors cursor-pointer whitespace-nowrap"
           >
             <Store className="w-3.5 h-3.5" />
-            <span>List Gift Shop Space</span>
+            <span>List Store Space</span>
           </button>
 
           <button
@@ -249,7 +249,7 @@ export default function Header({ onSelectRole }: HeaderProps) {
               className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#F4E409] py-3.5 text-base font-extrabold text-[#3D0710] shadow-xs hover:bg-[#3D0710] hover:text-[#F4E409] transition-colors cursor-pointer"
             >
               <Store className="w-5 h-5" />
-              <span>List Your Gift Shop Space</span>
+              <span>List Your Store Space</span>
             </button>
           </div>
         </div>

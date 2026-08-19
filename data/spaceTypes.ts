@@ -7,39 +7,39 @@ export interface SpaceTypeItem {
 
 export const COMPACT_SPACE_TYPES: SpaceTypeItem[] = [
   {
-    id: "gift-counter",
-    name: "Gift Shop Counter Display",
-    description: "Checkout counter display spot capturing every gift shop customer during purchase.",
-    iconName: "Store",
-  },
-  {
-    id: "eye-level-shelf",
-    name: "Eye-Level Gift Shelf",
-    description: "Dedicated eye-level wooden or glass shelf for handmade gifts, decor, and accessories.",
+    id: "supermarket-shelf",
+    name: "Supermarket Shelf Display",
+    description: "Eye-level or top-shelf display placement on primary supermarket retail aisles.",
     iconName: "Layers",
   },
   {
-    id: "checkout-counter",
-    name: "Checkout Counter Space",
-    description: "High-visibility point-of-sale display right beside the billing counter.",
+    id: "endcap-display",
+    name: "End-Cap Display",
+    description: "High-impact aisle-end rack capturing every shopper browsing between main aisles.",
     iconName: "Store",
   },
   {
-    id: "showcase-cabinet",
-    name: "Glass Showcase Cabinet",
-    description: "Protected showcase glass cabinet for jewelry, keepsakes, and premium artisan items.",
+    id: "checkout-counter",
+    name: "Checkout Counter Display",
+    description: "High-visibility point-of-sale display right beside billing registers.",
+    iconName: "Store",
+  },
+  {
+    id: "refrigerated-display",
+    name: "Refrigerated Display Space",
+    description: "Chilled shelf or fridge rack for cold brews, beverages, and fresh products.",
     iconName: "ShieldCheck",
   },
   {
-    id: "tabletop-display",
-    name: "Tabletop Display",
-    description: "Promotional tabletop stand placed in high-footfall store areas for maximum engagement.",
+    id: "tabletop-stand",
+    name: "Tabletop & Grab-and-Go Rack",
+    description: "Promotional standalone rack placed in high-footfall store entrance areas.",
     iconName: "Gift",
   },
   {
     id: "entrance-stand",
-    name: "Entrance & Window Display",
-    description: "Front store window or entrance display rack attracting browsing shoppers.",
+    name: "Entrance & Feature Corner",
+    description: "Front store window or entrance feature display rack attracting walk-in shoppers.",
     iconName: "Box",
   },
 ];
@@ -49,7 +49,7 @@ export const RACK_SIZES = [
   { id: "medium", name: "Medium Display", dimensions: "Up to 3x2 ft" },
   { id: "large", name: "Large Display", dimensions: "Up to 5x2 ft" },
   { id: "countertop", name: "Countertop Space", dimensions: "Billing Counter Area" },
-  { id: "custom", name: "Custom Space", dimensions: "Full Gift Store Corner" },
+  { id: "custom", name: "Custom Space", dimensions: "Full Retail Section" },
 ];
 
 

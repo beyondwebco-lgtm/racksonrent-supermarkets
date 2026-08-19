@@ -8,65 +8,65 @@ export interface ServiceSupported {
 
 export const SERVICES_SUPPORTED: ServiceSupported[] = [
   {
-    id: "handmade-crafts",
-    title: "Handmade Gifts & Crafts",
-    description: "Handmade crafts, artisan gifts, candles, pottery, and artistic creations.",
-    iconName: "Gift",
-    category: "packaged"
-  },
-  {
-    id: "personalized-gifts",
-    title: "Personalized Gifts & Custom Products",
-    description: "Engraved gifts, photo keepsakes, custom mugs, and bespoke accessories.",
-    iconName: "Sparkles",
-    category: "packaged"
-  },
-  {
-    id: "stationery-journaling",
-    title: "Stationery & Journaling",
-    description: "Artisan notebooks, planner sets, greeting cards, and calligraphy tools.",
+    id: "packaged-foods",
+    title: "Packaged Foods & Snacks",
+    description: "Packaged snacks, biscuits, chips, roasted products, gourmet foods, and breakfast items.",
     iconName: "ShoppingBag",
+    category: "packaged"
+  },
+  {
+    id: "beverages-rtd",
+    title: "Beverages & Ready-to-Drink Products",
+    description: "Cold brews, juices, sparkling waters, energy drinks, kombucha, and functional beverages.",
+    iconName: "Sparkles",
     category: "beverages"
   },
   {
-    id: "home-decor",
-    title: "Home Decor & Lifestyle Gifts",
-    description: "Scented candles, wall art, ceramic vases, and aesthetic home accents.",
-    iconName: "HeartHandshake",
+    id: "healthy-wellness",
+    title: "Healthy Foods & Wellness Products",
+    description: "Organic snacks, protein bars, superfood mixes, gluten-free items, and supplements.",
+    iconName: "ShoppingBag",
     category: "healthy"
   },
   {
-    id: "jewelry-accessories",
-    title: "Jewellery & Fashion Accessories",
-    description: "Handmade jewelry, tote bags, scarves, and fashion accessories.",
+    id: "personal-care",
+    title: "Personal Care & Beauty",
+    description: "Skincare products, organic soaps, hair care essentials, body care, and cosmetics.",
+    iconName: "HeartHandshake",
+    category: "packaged"
+  },
+  {
+    id: "household-cleaning",
+    title: "Household & Cleaning Products",
+    description: "Eco-friendly cleaners, home care supplies, paper products, and household items.",
     iconName: "Gift",
     category: "packaged"
   },
   {
-    id: "kids-creative",
-    title: "Kids Gifts & Creative Toys",
-    description: "Wooden toys, craft activity kits, storybooks, and puzzle sets.",
+    id: "specialty-foods",
+    title: "Specialty Foods & Local Brands",
+    description: "Regional delicacies, artisanal sauces, spice blends, and handcrafted food items.",
     iconName: "Sparkles",
     category: "display"
   },
   {
-    id: "gift-counters",
-    title: "Gift Shop Counter Displays",
-    description: "Checkout counter display spots placed next to the billing register.",
-    iconName: "Store",
-    category: "display"
-  },
-  {
-    id: "eye-level-shelves",
-    title: "Eye-Level Gift Shelves",
-    description: "Dedicated wooden and glass shelves positioned at eye level for high visibility.",
+    id: "supermarket-shelves",
+    title: "Supermarket Shelf Displays",
+    description: "Primary aisle wooden and metal shelf displays positioned at eye level.",
     iconName: "Layers",
     category: "display"
   },
   {
-    id: "glass-showcases",
-    title: "Glass Showcase Cabinets",
-    description: "Protected glass display cabinets for jewelry, keepsakes, and premium items.",
+    id: "endcap-racks",
+    title: "Aisle End-Cap Racks",
+    description: "Promotional end-cap display racks located at major aisle intersections.",
+    iconName: "Store",
+    category: "display"
+  },
+  {
+    id: "checkout-counters",
+    title: "Checkout Register Racks",
+    description: "Point-of-sale impulse display stands right beside store billing counters.",
     iconName: "ShieldCheck",
     category: "display"
   }

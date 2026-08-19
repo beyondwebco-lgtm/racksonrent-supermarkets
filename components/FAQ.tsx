@@ -24,7 +24,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Everything you need to know about Racks on Rent, gift-shop display spaces, and the space-sharing process.
+            Everything you need to know about Racks on Rent, supermarket display spaces, and the retail space-sharing process.
           </p>
         </div>
 

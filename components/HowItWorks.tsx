@@ -5,32 +5,32 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "List Gift Shop Space",
-      description: "Gift shop owners list available shelves, counters, racks, showcases, tabletop spaces, or display corners.",
+      title: "List Store Space",
+      description: "Supermarket owners list available shelves, racks, counters, promotional areas, refrigerated spaces, or display corners.",
       icon: Store,
     },
     {
       number: 2,
-      title: "Browse Gift Shop Spaces",
-      description: "Brands and entrepreneurs search available spaces by city, location, size, and display type.",
+      title: "Browse Supermarket Spaces",
+      description: "Brands and entrepreneurs search available retail spaces by city, location, size, category, and display type.",
       icon: Search,
     },
     {
       number: 3,
       title: "Reserve a Space",
-      description: "Choose a suitable gift-shop display location and agree on a daily, weekly, or monthly rental arrangement.",
+      description: "Choose a suitable supermarket display location and agree on a daily, weekly, or monthly rental arrangement.",
       icon: Calendar,
     },
     {
       number: 4,
       title: "Display & Sell",
-      description: "Products are displayed inside the gift shop where customers can discover, interact with, and purchase them.",
+      description: "Products are displayed inside the supermarket where shoppers can discover, interact with, and purchase them.",
       icon: ShoppingBag,
     },
     {
       number: 5,
       title: "Shared Success",
-      description: "Gift shop owners earn from unused display space while brands gain valuable offline visibility and customer access.",
+      description: "Supermarket owners earn additional income from unused display space while brands gain valuable offline visibility and customer access.",
       icon: TrendingUp,
     },
   ];
@@ -48,7 +48,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Five simple steps to connect gift shop owners with brands, creators, artists, and entrepreneurs looking for physical retail display space.
+            Five simple steps to connect supermarket owners with FMCG brands, food businesses, local manufacturers, and entrepreneurs looking for high-visibility retail display space.
           </p>
         </div>
 

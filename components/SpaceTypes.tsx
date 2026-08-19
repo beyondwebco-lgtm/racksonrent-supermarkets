@@ -25,7 +25,7 @@ export default function SpaceTypes() {
             What Kind of Space Can Be Offered?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
-            Explore popular gift shop display options that suit eye-level shelves, checkout counters, showcase cabinets, and tabletop corners.
+            Explore popular supermarket display options that suit eye-level shelves, end-cap racks, checkout registers, refrigerated zones, and feature corners.
           </p>
 
         </div>
