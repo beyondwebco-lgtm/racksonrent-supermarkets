@@ -91,16 +91,16 @@ export default function PopularCategories() {
         </div>
 
         {/* Center-Focused Carousel Container */}
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-12">
+        <div className="relative max-w-5xl mx-auto px-2 sm:px-12">
           
           {/* Previous Arrow Button */}
           <button
             type="button"
             onClick={prevSlide}
             aria-label="Previous category"
-            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#6B0F1A] text-[#FFF6A3] border-2 border-[#F4E409] flex items-center justify-center shadow-xl transition-all hover:bg-[#3D0710] hover:text-[#F4E409] hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#6B0F1A] text-[#FFF6A3] border-2 border-[#F4E409] flex items-center justify-center shadow-xl transition-all hover:bg-[#3D0710] hover:text-[#F4E409] hover:scale-110 active:scale-95 cursor-pointer touch-target"
           >
-            <ChevronLeft className="w-6 h-6 stroke-[3]" />
+            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
 
           {/* Next Arrow Button */}
@@ -108,14 +108,14 @@ export default function PopularCategories() {
             type="button"
             onClick={nextSlide}
             aria-label="Next category"
-            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#6B0F1A] text-[#FFF6A3] border-2 border-[#F4E409] flex items-center justify-center shadow-xl transition-all hover:bg-[#3D0710] hover:text-[#F4E409] hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#6B0F1A] text-[#FFF6A3] border-2 border-[#F4E409] flex items-center justify-center shadow-xl transition-all hover:bg-[#3D0710] hover:text-[#F4E409] hover:scale-110 active:scale-95 cursor-pointer touch-target"
           >
-            <ChevronRight className="w-6 h-6 stroke-[3]" />
+            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
 
           {/* Carousel Stage */}
           <div
-            className="relative h-[520px] sm:h-[560px] flex items-center justify-center touch-pan-y"
+            className="relative h-[500px] sm:h-[560px] flex items-center justify-center touch-pan-y"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -151,7 +151,7 @@ export default function PopularCategories() {
                     transition:
                       "transform 600ms ease, opacity 600ms ease, filter 600ms ease",
                   }}
-                  className={`absolute w-[290px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-[#FFFDF5] p-5 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
+                  className={`absolute w-[calc(100vw-72px)] max-w-[340px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-[#FFFDF5] p-4 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
                     isActive
                       ? "border-[#6B0F1A] shadow-[0_20px_50px_rgba(107,15,26,0.22)]"
                       : "border-[#6B0F1A]/20 pointer-events-auto hover:opacity-75"

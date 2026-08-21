@@ -129,39 +129,39 @@ ${detailsText}`;
             <button
               type="button"
               onClick={() => handleRoleSelect("gym-owner")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "gym-owner"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <Store className="w-4 h-4" />
+              <Store className="w-4 h-4 flex-shrink-0" />
               <span>Supermarket Owner</span>
             </button>
 
             <button
               type="button"
               onClick={() => handleRoleSelect("wellness")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "wellness"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <Utensils className="w-4 h-4" />
+              <Utensils className="w-4 h-4 flex-shrink-0" />
               <span>Brand / Food Entrepreneur</span>
             </button>
 
             <button
               type="button"
               onClick={() => handleRoleSelect("general")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "general"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <HelpCircle className="w-4 h-4" />
+              <HelpCircle className="w-4 h-4 flex-shrink-0" />
               <span>General Enquiry</span>
             </button>
           </div>
@@ -169,7 +169,7 @@ ${detailsText}`;
           {/* Form Box */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-5 rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-6 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-4 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
           >
             {submitted && (
               <div className="bg-[#FFF6A3] border border-[#6B0F1A]/30 text-[#6B0F1A] p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
@@ -190,7 +190,7 @@ ${detailsText}`;
                 value={formData.fullName}
                 onChange={handleChange}
                 placeholder="e.g. Rahul Sharma"
-                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm sm:text-base min-h-[44px] ${
                   errors.fullName ? "border-red-500 bg-red-50/30" : ""
                 }`}
               />

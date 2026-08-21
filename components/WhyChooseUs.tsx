@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={item.id}
-                className="group rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-6 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:shadow-[0_20px_50px_rgba(107,15,26,0.14)] hover:border-[#6B0F1A]/50 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] flex flex-col justify-between"
+                className="group rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-5 sm:p-6 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:shadow-[0_20px_50px_rgba(107,15,26,0.14)] hover:border-[#6B0F1A]/50 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] flex flex-col justify-between"
               >
                 <div>
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF6A3] mb-5 shadow-xs group-hover:bg-[#6B0F1A] transition-colors duration-300">

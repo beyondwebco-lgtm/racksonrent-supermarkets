@@ -80,9 +80,14 @@ export default function HowItWorks() {
 
                 {/* Connecting Desktop Arrow */}
                 {idx < steps.length - 1 && (
-                  <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-[#F4E409] text-[#3D0710] shadow-sm border border-[#6B0F1A]/20 group-hover:translate-x-1 group-hover:bg-[#3D0710] group-hover:text-[#F4E409] transition-all duration-300">
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </div>
+                  <>
+                    <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-[#F4E409] text-[#3D0710] shadow-sm border border-[#6B0F1A]/20 group-hover:translate-x-1 group-hover:bg-[#3D0710] group-hover:text-[#F4E409] transition-all duration-300">
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </div>
+                    <div className="flex lg:hidden justify-center py-2 text-[#6B0F1A]">
+                      <span className="w-6 h-6 rounded-full bg-[#FFF6A3] border border-[#6B0F1A]/20 flex items-center justify-center text-xs font-bold text-[#6B0F1A]">↓</span>
+                    </div>
+                  </>
                 )}
               </div>
             );
