@@ -25,9 +25,30 @@ export default function Pricing({ onSelectRole }: PricingProps) {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex rounded-full bg-[#FFF6A3] px-4 py-1.5 text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            Transparent Pricing
-          </span>
+          <div className="flex items-center justify-center gap-4 w-full mb-6">
+            {/* Left Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+
+            {/* Pill Badge */}
+            <span
+              className="
+                px-5 py-2
+                rounded-full
+                border-2 border-[#6B0F1A]
+                bg-[#F4E409]
+                text-[#3D0710] font-bold
+                text-xs sm:text-sm
+                tracking-widest uppercase
+                whitespace-nowrap
+                select-none
+              "
+            >
+              • Transparent Pricing •
+            </span>
+
+            {/* Right Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+          </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
             Simple & Transparent Options
           </h2>
@@ -41,36 +62,29 @@ export default function Pricing({ onSelectRole }: PricingProps) {
           {PRICING_TIERS.map((tier: PricingTier) => (
             <div
               key={tier.id}
-              className={`rounded-3xl border-2 p-8 flex flex-col justify-between transition-all relative ${
+              className={`group rounded-3xl border-2 p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 tier.highlighted
                   ? "border-[#6B0F1A] bg-[#FFF6A3]/20 shadow-[0_16px_40px_rgba(107,15,26,0.12)]"
                   : "border-[#F0E2E4] bg-[#FFFDF5] shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
               }`}
             >
               {tier.highlighted && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#6B0F1A] text-[#FFF6A3] text-xs font-black px-4 py-1 rounded-full border border-[#F4E409]">
+                <span className="absolute -top-3.5 left-6 bg-[#6B0F1A] text-[#FFF6A3] text-[10px] font-black tracking-widest uppercase py-1 px-3.5 rounded-full border border-[#FFF6A3]/20">
                   Most Popular
                 </span>
               )}
 
               <div>
-                <div className="flex items-center justify-between gap-4 mb-4">
-                  <div>
-                    <span className="text-xs font-extrabold uppercase tracking-wider text-[#6B0F1A]">
-                      {tier.targetRole}
-                    </span>
-                    <h3 className="text-2xl font-black text-[#6B0F1A] mt-1">
-                      {tier.title}
-                    </h3>
-                  </div>
-
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#F0E2E4]">
+                  <h3 className="text-xl font-extrabold text-[#6B0F1A] group-hover:text-[#B8913A] transition-colors duration-300">
+                    {tier.title}
+                  </h3>
                   <div className="p-3 rounded-2xl bg-[#FFF6A3] text-[#6B0F1A]">
-                    {tier.roleType === "gym-owner" ? <Store className="w-6 h-6" /> : <Utensils className="w-6 h-6" />}
+                    {tier.roleType === "gym-owner" ? <Store className="w-6 h-6" /> : <Tag className="w-6 h-6" />}
                   </div>
                 </div>
 
-
-                <div className="my-6 pb-6 border-b border-[#F0E2E4]">
+                <div className="mb-6">
                   <span className="text-4xl font-black text-[#6B0F1A]">
                     {tier.priceDisplay}
                   </span>
@@ -86,7 +100,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                   {tier.features.map((feat, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#6B0F1A] flex-shrink-0" />
-                      <span className="text-sm font-extrabold text-[#1F1F1F]">{feat}</span>
+                      <span className="text-sm font-extrabold text-[#B8913A]">{feat}</span>
                     </div>
                   ))}
                 </div>

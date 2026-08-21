@@ -164,9 +164,30 @@ export default function GymSpaceShowcase({
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <span className="inline-flex rounded-full bg-[#FFF6A3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            Supermarket Display Opportunities
-          </span>
+          <div className="flex items-center justify-center gap-4 w-full mb-6">
+            {/* Left Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+
+            {/* Pill Badge */}
+            <span
+              className="
+                px-5 py-2
+                rounded-full
+                border-2 border-[#6B0F1A]
+                bg-[#F4E409]
+                text-[#3D0710] font-bold
+                text-xs sm:text-sm
+                tracking-widest uppercase
+                whitespace-nowrap
+                select-none
+              "
+            >
+              • Supermarket Display Opportunities •
+            </span>
+
+            {/* Right Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+          </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
             <span className="hidden sm:inline">Choose What You Want to Display Inside a Supermarket</span>
             <span className="sm:hidden">Explore Supermarket Display Formats</span>
@@ -280,7 +301,7 @@ export default function GymSpaceShowcase({
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {activeCategory.benefits.map((benefit, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-[#1F1F1F] font-extrabold">
+                    <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-[#B8913A] font-extrabold">
                       <CheckCircle2 className="w-4 h-4 text-[#6B0F1A] flex-shrink-0" />
                       <span>{benefit}</span>
                     </div>

@@ -79,9 +79,30 @@ export default function PopularCategories() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex rounded-full bg-[#FFF6A3] px-4 py-1.5 text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            Supermarket Display Categories
-          </span>
+          <div className="flex items-center justify-center gap-4 w-full mb-6">
+            {/* Left Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+
+            {/* Pill Badge */}
+            <span
+              className="
+                px-5 py-2
+                rounded-full
+                border-2 border-[#6B0F1A]
+                bg-[#F4E409]
+                text-[#3D0710] font-bold
+                text-xs sm:text-sm
+                tracking-widest uppercase
+                whitespace-nowrap
+                select-none
+              "
+            >
+              • Supermarket Display Categories •
+            </span>
+
+            {/* Right Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+          </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
             Popular Supermarket Product Categories
           </h2>
@@ -151,7 +172,7 @@ export default function PopularCategories() {
                     transition:
                       "transform 600ms ease, opacity 600ms ease, filter 600ms ease",
                   }}
-                  className={`absolute w-[calc(100vw-72px)] max-w-[340px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-[#FFFDF5] p-4 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
+                  className={`group absolute w-[calc(100vw-72px)] max-w-[340px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-[#FFFDF5] p-4 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
                     isActive
                       ? "border-[#6B0F1A] shadow-[0_20px_50px_rgba(107,15,26,0.22)]"
                       : "border-[#6B0F1A]/20 pointer-events-auto hover:opacity-75"
@@ -180,7 +201,7 @@ export default function PopularCategories() {
 
                     {/* Content */}
                     <div className="px-1">
-                      <h3 className="font-extrabold text-base sm:text-lg lg:text-xl text-[#6B0F1A] leading-snug mb-2 whitespace-normal break-words">
+                      <h3 className="font-extrabold text-base sm:text-lg lg:text-xl text-[#6B0F1A] group-hover:text-[#B8913A] transition-colors duration-300 leading-snug mb-2 whitespace-normal break-words">
                         {cat.name}
                       </h3>
 

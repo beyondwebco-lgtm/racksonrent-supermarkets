@@ -88,7 +88,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   <div className="p-1.5 rounded-lg bg-[#FFF6A3] flex-shrink-0">
                     {item.icon}
                   </div>
-                  <span className="text-xs sm:text-sm font-extrabold text-[#1F1F1F]">{item.text}</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-[#B8913A]">{item.text}</span>
                 </div>
               ))}
             </div>

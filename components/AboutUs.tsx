@@ -76,18 +76,40 @@ export default function AboutUs() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-[#FFF6A3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
-            <Sparkles className="w-3.5 h-3.5 text-[#6B0F1A]" />
-            <span>India&apos;s First Commercial Display Space Marketplace</span>
-          </span>
+          <div className="flex items-center justify-center gap-4 w-full mb-6">
+            {/* Left Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+
+            {/* Pill Badge */}
+            <span
+              className="
+                px-5 py-2
+                rounded-full
+                border-2 border-[#6B0F1A]
+                bg-[#F4E409]
+                text-[#3D0710] font-bold
+                text-xs sm:text-sm
+                tracking-widest uppercase
+                whitespace-nowrap
+                select-none
+              "
+            >
+              • OUR STORY •
+            </span>
+
+            {/* Right Line */}
+            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+          </div>
           
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl leading-tight">
             About <span className="bg-[#F4E409] text-[#3D0710] px-3 py-0.5 rounded-xl inline-block border border-[#6B0F1A]/20">Racks on Rent</span>
           </h2>
           
-          <p className="mt-4 text-lg font-bold text-[#3D0710] sm:text-xl">
+          <h3 className="mt-4 text-lg font-bold text-[#B8913A] sm:text-xl md:text-2xl leading-snug">
             Transforming Unused Commercial Space into Business Opportunities
-          </p>
+          </h3>
+          {/* Short Yellow Underline Accent */}
+          <div className="mt-2 h-[3px] w-10 bg-[#F4E409] rounded-full mx-auto" />
         </div>
 
         {/* Intro Story Section */}
