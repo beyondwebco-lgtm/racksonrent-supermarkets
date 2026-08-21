@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, Store, Utensils } from "lucide-react";
+import { CheckCircle2, Store, Tag } from "lucide-react";
 import { PRICING_TIERS, PricingTier } from "@/data/pricing";
 
 interface PricingProps {
