@@ -51,10 +51,10 @@ export default function Hero({ onSelectRole }: HeroProps) {
   };
 
   const benefitItems = [
-    { text: "Extra Retail Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#1F2937]" /> },
-    { text: "Connect with Local & Growing Brands.", icon: <ShieldCheck className="w-4 h-4 text-[#1F2937]" /> },
-    { text: "Verified, Trusted Supermarket Locations.", icon: <Lock className="w-4 h-4 text-[#1F2937]" /> },
-    { text: "Hassle-Free Direct Space Sharing.", icon: <CheckCircle2 className="w-4 h-4 text-[#1F2937]" /> },
+    { text: "Extra Retail Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#1F1F1F]" /> },
+    { text: "Connect with Local & Growing Brands.", icon: <ShieldCheck className="w-4 h-4 text-[#1F1F1F]" /> },
+    { text: "Verified, Trusted Supermarket Locations.", icon: <Lock className="w-4 h-4 text-[#1F1F1F]" /> },
+    { text: "Hassle-Free Direct Space Sharing.", icon: <CheckCircle2 className="w-4 h-4 text-[#1F1F1F]" /> },
   ];
 
   return (
@@ -65,14 +65,14 @@ export default function Hero({ onSelectRole }: HeroProps) {
           {/* Left Column */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="inline-flex items-center rounded-full bg-[#FEF9C3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#1F2937] border border-[#E5E7EB]">
+              <span className="inline-flex items-center rounded-full bg-[#FEF9C3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#1F1F1F] border border-[#E5E7EB]">
                 For Supermarket Owners & Product Brands
               </span>
             </div>
 
-            <h1 className="fluid-hero-title font-extrabold tracking-tight text-[#1F2937]">
+            <h1 className="fluid-hero-title font-extrabold tracking-tight text-[#1F1F1F]">
               Give Your Products a Place{" "}
-              <span className="bg-[#FACC15] text-[#111827] px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F2937]/20">
+              <span className="bg-[#FACC15] text-[#3D0710] px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F1F1F]/20">
                 Inside a Busy Supermarket.
               </span>
             </h1>
@@ -95,7 +95,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
             {/* Animated 2 Primary CTAs */}
             <div className="relative pt-4">
-              <div className="w-16 h-0.5 bg-[#1F2937]/30 rounded-full animate-accent-line mb-3" />
+              <div className="w-16 h-0.5 bg-[#1F1F1F]/30 rounded-full animate-accent-line mb-3" />
 
               <div className="absolute inset-0 -top-1 bg-[radial-gradient(ellipse_at_center,rgba(244,228,9,0.30),transparent_70%)] pointer-events-none rounded-3xl blur-md animate-cta-pulse-group" />
 
@@ -107,7 +107,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("wellness")}
                   onMouseMove={handleMouseMoveBtn1}
                   onMouseLeave={handleMouseLeaveBtn1}
-                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-[#FACC15] border-2 border-[#1F2937]/20 px-5 sm:px-6 py-3.5 text-[#111827] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-[#FACC15] border-2 border-[#1F1F1F]/20 px-5 sm:px-6 py-3.5 text-[#3D0710] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none" />
 
@@ -133,7 +133,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("gym-owner")}
                   onMouseMove={handleMouseMoveBtn2}
                   onMouseLeave={handleMouseLeaveBtn2}
-                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F2937] bg-[#1F2937] px-5 sm:px-6 py-3.5 text-[#FEF9C3] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F1F1F] bg-[#1F1F1F] px-5 sm:px-6 py-3.5 text-[#FEF9C3] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-[#FACC15]/30 to-transparent pointer-events-none" />
 
@@ -175,7 +175,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
                   {/* Overlay Badge */}
-                  <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-[#111827] text-white px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border-2 border-[#FACC15] shadow-xl flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide z-10">
+                  <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-[#3D0710] text-white px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border-2 border-[#FACC15] shadow-xl flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide z-10">
                     <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#FACC15] animate-ping flex-shrink-0" />
                     <span className="whitespace-nowrap">Extra Space. Extra Profit.</span>
                   </div>
