@@ -12,23 +12,23 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFDF5] border-y border-[#F0E2E4]" id="faq">
+    <section className="py-16 sm:py-24 bg-[#F9FAFB] border-y border-[#E5E7EB]" id="faq">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-[#1F2937] opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#6B0F1A]
-                bg-[#F4E409]
-                text-[#3D0710] font-bold
+                border-2 border-[#1F2937]
+                bg-[#FACC15]
+                text-[#111827] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -39,12 +39,12 @@ export default function FAQ() {
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-[#1F2937] opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1F2937] md:text-5xl">
             Frequently Asked Questions
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#6B7280] md:text-lg font-medium">
             Everything you need to know about Racks on Rent, supermarket display spaces, and the retail space-sharing process.
           </p>
         </div>
@@ -58,8 +58,8 @@ export default function FAQ() {
                 key={faq.id}
                 className={`group rounded-2xl border transition-all duration-300 shadow-xs overflow-hidden ${
                   isOpen
-                    ? "border-[#6B0F1A] bg-[#FFF6A3]/40 shadow-sm"
-                    : "border-[#F0E2E4] bg-[#FFFDF5] hover:border-[#6B0F1A]/50 hover:bg-[#FFF6A3]/20 hover:-translate-y-0.5"
+                    ? "border-[#1F2937] bg-[#FEF9C3]/40 shadow-sm"
+                    : "border-[#E5E7EB] bg-[#F9FAFB] hover:border-[#1F2937]/50 hover:bg-[#FEF9C3]/20 hover:-translate-y-0.5"
                 }`}
               >
                 <button
@@ -68,12 +68,12 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   aria-controls={`faq-content-${faq.id}`}
                   onClick={() => toggleItem(faq.id)}
-                  className="w-full flex items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 text-left font-black text-sm sm:text-base md:text-lg text-[#6B0F1A] hover:text-[#B8913A] focus:outline-none transition-colors cursor-pointer min-h-[48px]"
+                  className="w-full flex items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 text-left font-black text-sm sm:text-base md:text-lg text-[#1F2937] hover:text-[#4B5563] focus:outline-none transition-colors cursor-pointer min-h-[48px]"
                 >
-                  <span className="group-hover:text-[#B8913A] group-hover:translate-x-1 transition-all duration-200 break-words">{faq.question}</span>
+                  <span className="group-hover:text-[#4B5563] group-hover:translate-x-1 transition-all duration-200 break-words">{faq.question}</span>
                   <span
                     className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? "rotate-180 bg-[#6B0F1A] text-[#FFF6A3]" : "bg-[#FFF6A3] text-[#6B0F1A] group-hover:bg-[#6B0F1A] group-hover:text-[#FFF6A3]"
+                      isOpen ? "rotate-180 bg-[#1F2937] text-[#FEF9C3]" : "bg-[#FEF9C3] text-[#1F2937] group-hover:bg-[#1F2937] group-hover:text-[#FEF9C3]"
                     }`}
                   >
                     <ChevronDown className="w-5 h-5" />
@@ -89,7 +89,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-5 pb-6 sm:px-6 pt-1 text-[#5F5F5F] text-sm sm:text-base leading-relaxed border-t border-[#F0E2E4] bg-[#FFFDF5] font-medium">
+                    <div className="px-5 pb-6 sm:px-6 pt-1 text-[#6B7280] text-sm sm:text-base leading-relaxed border-t border-[#E5E7EB] bg-[#F9FAFB] font-medium">
                       {faq.answer}
                     </div>
                   </div>

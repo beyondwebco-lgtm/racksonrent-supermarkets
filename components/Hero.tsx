@@ -51,51 +51,51 @@ export default function Hero({ onSelectRole }: HeroProps) {
   };
 
   const benefitItems = [
-    { text: "Extra Retail Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#6B0F1A]" /> },
-    { text: "Connect with Local & Growing Brands.", icon: <ShieldCheck className="w-4 h-4 text-[#6B0F1A]" /> },
-    { text: "Verified, Trusted Supermarket Locations.", icon: <Lock className="w-4 h-4 text-[#6B0F1A]" /> },
-    { text: "Hassle-Free Direct Space Sharing.", icon: <CheckCircle2 className="w-4 h-4 text-[#6B0F1A]" /> },
+    { text: "Extra Retail Space. Extra Income.", icon: <TrendingUp className="w-4 h-4 text-[#1F2937]" /> },
+    { text: "Connect with Local & Growing Brands.", icon: <ShieldCheck className="w-4 h-4 text-[#1F2937]" /> },
+    { text: "Verified, Trusted Supermarket Locations.", icon: <Lock className="w-4 h-4 text-[#1F2937]" /> },
+    { text: "Hassle-Free Direct Space Sharing.", icon: <CheckCircle2 className="w-4 h-4 text-[#1F2937]" /> },
   ];
 
   return (
-    <section className="relative pt-8 pb-12 lg:pt-16 lg:pb-20 bg-[radial-gradient(circle_at_80%_20%,rgba(107,15,26,0.08),transparent_40%),linear-gradient(180deg,#fffdf5_0%,#fff6a3_25%,#fffdf5_100%)] border-b border-[#F0E2E4]" id="hero">
+    <section className="relative pt-8 pb-12 lg:pt-16 lg:pb-20 bg-[radial-gradient(circle_at_80%_20%,rgba(107,15,26,0.08),transparent_40%),linear-gradient(180deg,#F9FAFB_0%,#FEF9C3_25%,#F9FAFB_100%)] border-b border-[#E5E7EB]" id="hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
           {/* Left Column */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="inline-flex items-center rounded-full bg-[#FFF6A3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#6B0F1A] border border-[#F0E2E4]">
+              <span className="inline-flex items-center rounded-full bg-[#FEF9C3] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#1F2937] border border-[#E5E7EB]">
                 For Supermarket Owners & Product Brands
               </span>
             </div>
 
-            <h1 className="fluid-hero-title font-extrabold tracking-tight text-[#6B0F1A]">
+            <h1 className="fluid-hero-title font-extrabold tracking-tight text-[#1F2937]">
               Give Your Products a Place{" "}
-              <span className="bg-[#F4E409] text-[#3D0710] px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#6B0F1A]/20">
+              <span className="bg-[#FACC15] text-[#111827] px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F2937]/20">
                 Inside a Busy Supermarket.
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg text-[#5F5F5F] leading-relaxed max-w-2xl font-medium">
+            <p className="text-sm sm:text-base lg:text-lg text-[#6B7280] leading-relaxed max-w-2xl font-medium">
               Rent display space inside trusted supermarkets and retail stores and put your food, beverage, FMCG, personal-care, household, lifestyle, and specialty products directly in front of active shoppers.
             </p>
 
             {/* 4 Small Benefit Items */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-2">
               {benefitItems.map((item, idx) => (
-                <div key={idx} className="flex items-center gap-2.5 bg-[#FFFDF5] p-2 sm:p-2.5 rounded-xl border border-[#F0E2E4] shadow-2xs">
-                  <div className="p-1.5 rounded-lg bg-[#FFF6A3] flex-shrink-0">
+                <div key={idx} className="flex items-center gap-2.5 bg-[#F9FAFB] p-2 sm:p-2.5 rounded-xl border border-[#E5E7EB] shadow-2xs">
+                  <div className="p-1.5 rounded-lg bg-[#FEF9C3] flex-shrink-0">
                     {item.icon}
                   </div>
-                  <span className="text-xs sm:text-sm font-extrabold text-[#B8913A]">{item.text}</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-[#4B5563]">{item.text}</span>
                 </div>
               ))}
             </div>
 
             {/* Animated 2 Primary CTAs */}
             <div className="relative pt-4">
-              <div className="w-16 h-0.5 bg-[#6B0F1A]/30 rounded-full animate-accent-line mb-3" />
+              <div className="w-16 h-0.5 bg-[#1F2937]/30 rounded-full animate-accent-line mb-3" />
 
               <div className="absolute inset-0 -top-1 bg-[radial-gradient(ellipse_at_center,rgba(244,228,9,0.30),transparent_70%)] pointer-events-none rounded-3xl blur-md animate-cta-pulse-group" />
 
@@ -107,7 +107,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("wellness")}
                   onMouseMove={handleMouseMoveBtn1}
                   onMouseLeave={handleMouseLeaveBtn1}
-                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-[#F4E409] border-2 border-[#6B0F1A]/20 px-5 sm:px-6 py-3.5 text-[#3D0710] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-[#FACC15] border-2 border-[#1F2937]/20 px-5 sm:px-6 py-3.5 text-[#111827] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none" />
 
@@ -133,9 +133,9 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("gym-owner")}
                   onMouseMove={handleMouseMoveBtn2}
                   onMouseLeave={handleMouseLeaveBtn2}
-                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#6B0F1A] bg-[#6B0F1A] px-5 sm:px-6 py-3.5 text-[#FFF6A3] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F2937] bg-[#1F2937] px-5 sm:px-6 py-3.5 text-[#FEF9C3] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-[#F4E409]/30 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-[#FACC15]/30 to-transparent pointer-events-none" />
 
                   <div
                     style={{
@@ -144,10 +144,10 @@ export default function Hero({ onSelectRole }: HeroProps) {
                     className="transition-transform duration-200 ease-out flex flex-col items-center justify-center w-full"
                   >
                     <div className="flex items-center gap-2 text-sm sm:text-base font-black">
-                      <Store className="w-4 h-4 sm:w-5 sm:h-5 text-[#FFF6A3] group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300 flex-shrink-0" />
+                      <Store className="w-4 h-4 sm:w-5 sm:h-5 text-[#FEF9C3] group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300 flex-shrink-0" />
                       <span>List Your Store Space</span>
                     </div>
-                    <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#F4E409] mt-0.5">
+                    <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#FACC15] mt-0.5">
                       For Supermarket Owners
                     </span>
                   </div>
@@ -160,8 +160,8 @@ export default function Hero({ onSelectRole }: HeroProps) {
           {/* Right Column (High Quality Gift Shop Showcase Image / Video) */}
           <div className="lg:col-span-5 relative mt-6 lg:mt-0">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-[#F0E2E4] bg-[#FFFDF5] p-2 sm:p-3 shadow-[0_24px_70px_rgba(107,15,26,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(107,15,26,0.18)] hover:border-[#F4E409]/60 group">
-                <div className="relative aspect-4/3 w-full rounded-xl sm:rounded-2xl overflow-hidden bg-[#FFF6A3]/20">
+              <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-[#E5E7EB] bg-[#F9FAFB] p-2 sm:p-3 shadow-[0_24px_70px_rgba(107,15,26,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(107,15,26,0.18)] hover:border-[#FACC15]/60 group">
+                <div className="relative aspect-4/3 w-full rounded-xl sm:rounded-2xl overflow-hidden bg-[#FEF9C3]/20">
                   <video
                     src="/Racks_On_Rent_connects_bakery.mp4"
                     autoPlay
@@ -175,8 +175,8 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
                   {/* Overlay Badge */}
-                  <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-[#3D0710] text-white px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border-2 border-[#F4E409] shadow-xl flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide z-10">
-                    <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#F4E409] animate-ping flex-shrink-0" />
+                  <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-[#111827] text-white px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border-2 border-[#FACC15] shadow-xl flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide z-10">
+                    <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#FACC15] animate-ping flex-shrink-0" />
                     <span className="whitespace-nowrap">Extra Space. Extra Profit.</span>
                   </div>
                 </div>
