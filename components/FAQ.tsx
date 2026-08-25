@@ -12,7 +12,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F9FAFB] border-y border-[#E5E7EB]" id="faq">
+    <section className="py-16 sm:py-24 bg-(--background) border-y border-(--border)" id="faq">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -27,7 +27,7 @@ export default function FAQ() {
                 px-5 py-2
                 rounded-full
                 border-2 border-[#1F1F1F]
-                bg-[#FACC15]
+                bg-(--accent)
                 text-[#3D0710] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
@@ -41,10 +41,10 @@ export default function FAQ() {
             {/* Right Line */}
             <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1F1F1F] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Frequently Asked Questions
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#6B7280] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
             Everything you need to know about Racks on Rent, supermarket display spaces, and the retail space-sharing process.
           </p>
         </div>
@@ -58,8 +58,8 @@ export default function FAQ() {
                 key={faq.id}
                 className={`group rounded-2xl border transition-all duration-300 shadow-xs overflow-hidden ${
                   isOpen
-                    ? "border-[#1F1F1F] bg-[#FEF9C3]/40 shadow-sm"
-                    : "border-[#E5E7EB] bg-[#F9FAFB] hover:border-[#1F1F1F]/50 hover:bg-[#FEF9C3]/20 hover:-translate-y-0.5"
+                    ? "border-[#1F1F1F] bg-(--accent-light)/40 shadow-sm"
+                    : "border-(--border) bg-(--background) hover:border-[#1F1F1F]/50 hover:bg-(--accent-light)/20 hover:-translate-y-0.5"
                 }`}
               >
                 <button
@@ -68,12 +68,12 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   aria-controls={`faq-content-${faq.id}`}
                   onClick={() => toggleItem(faq.id)}
-                  className="w-full flex items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 text-left font-black text-sm sm:text-base md:text-lg text-[#1F1F1F] hover:text-[#4B5563] focus:outline-none transition-colors cursor-pointer min-h-[48px]"
+                  className="w-full flex items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 text-left font-black text-sm sm:text-base md:text-lg text-(--text) hover:text-(--text) focus:outline-none transition-colors cursor-pointer min-h-[48px]"
                 >
-                  <span className="group-hover:text-[#4B5563] group-hover:translate-x-1 transition-all duration-200 break-words">{faq.question}</span>
+                  <span className="group-hover:text-(--text) group-hover:translate-x-1 transition-all duration-200 break-words">{faq.question}</span>
                   <span
                     className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? "rotate-180 bg-[#1F1F1F] text-[#FEF9C3]" : "bg-[#FEF9C3] text-[#1F1F1F] group-hover:bg-[#1F1F1F] group-hover:text-[#FEF9C3]"
+                      isOpen ? "rotate-180 bg-[#1F1F1F] text-(--accent-light)" : "bg-(--accent-light) text-(--text) group-hover:bg-[#1F1F1F] group-hover:text-(--accent-light)"
                     }`}
                   >
                     <ChevronDown className="w-5 h-5" />
@@ -89,7 +89,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-5 pb-6 sm:px-6 pt-1 text-[#6B7280] text-sm sm:text-base leading-relaxed border-t border-[#E5E7EB] bg-[#F9FAFB] font-medium">
+                    <div className="px-5 pb-6 sm:px-6 pt-1 text-(--text-muted) text-sm sm:text-base leading-relaxed border-t border-(--border) bg-(--background) font-medium">
                       {faq.answer}
                     </div>
                   </div>

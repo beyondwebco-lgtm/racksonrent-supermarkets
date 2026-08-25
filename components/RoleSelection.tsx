@@ -20,7 +20,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F9FAFB]" id="choose-role">
+    <section className="py-16 sm:py-24 bg-(--background)" id="choose-role">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -35,7 +35,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                 px-5 py-2
                 rounded-full
                 border-2 border-[#1F1F1F]
-                bg-[#FACC15]
+                bg-(--accent)
                 text-[#3D0710] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
@@ -49,7 +49,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
             {/* Right Line */}
             <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1F1F1F] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Choose What Best Describes You
           </h2>
         </div>
@@ -61,27 +61,27 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
             return (
               <div
                 key={card.id}
-                className="rounded-3xl border-2 border-[#E5E7EB] bg-[#F9FAFB] p-8 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:shadow-[0_20px_50px_rgba(107,15,26,0.14)] hover:border-[#1F1F1F]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
+                className="rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:shadow-[0_20px_50px_rgba(107,15,26,0.14)] hover:border-[#1F1F1F]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FEF9C3] text-[#1F1F1F] mb-6 shadow-xs">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text) mb-6 shadow-xs">
                     {isGymOwner ? <Store className="w-6 h-6" /> : <Utensils className="w-6 h-6" />}
                   </div>
 
 
-                  <h3 className="text-2xl font-black text-[#1F1F1F] mb-3 group-hover:text-[#4B5563] transition-colors duration-300">
+                  <h3 className="text-2xl font-black text-(--text) mb-3 group-hover:text-(--text) transition-colors duration-300">
                     {card.heading}
                   </h3>
 
-                  <p className="text-base text-[#6B7280] leading-relaxed mb-6 font-medium">
+                  <p className="text-base text-(--text-muted) leading-relaxed mb-6 font-medium">
                     {card.text}
                   </p>
 
                   <div className="space-y-3 mb-8">
                     {card.benefits.map((benefit, idx) => (
                       <div key={idx} className="flex items-center gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#1F1F1F] flex-shrink-0" />
-                        <span className="text-sm font-extrabold text-[#4B5563]">{benefit}</span>
+                        <CheckCircle2 className="w-5 h-5 text-(--text) flex-shrink-0" />
+                        <span className="text-sm font-extrabold text-(--text)">{benefit}</span>
                       </div>
                     ))}
                   </div>
@@ -92,8 +92,8 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                   onClick={() => handleRoleClick(card.role)}
                   className={`w-full py-3.5 px-6 rounded-full font-extrabold transition-all shadow-xs cursor-pointer text-center ${
                     isGymOwner
-                      ? "bg-[#FACC15] text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-[#3D0710] hover:text-[#FACC15]"
-                      : "bg-[#1F1F1F] text-[#FEF9C3] hover:bg-[#3D0710] hover:text-[#FACC15]"
+                      ? "bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
+                      : "bg-[#1F1F1F] text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
                   }`}
                 >
                   {card.ctaLabel}

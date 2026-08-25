@@ -107,7 +107,7 @@ ${detailsText}`;
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F9FAFB] border-t border-[#E5E7EB]" id="contact">
+    <section className="py-16 sm:py-24 bg-(--background) border-t border-(--border)" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -122,7 +122,7 @@ ${detailsText}`;
                 px-5 py-2
                 rounded-full
                 border-2 border-[#1F1F1F]
-                bg-[#FACC15]
+                bg-(--accent)
                 text-[#3D0710] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
@@ -136,24 +136,24 @@ ${detailsText}`;
             {/* Right Line */}
             <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1F1F1F] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Tell Us What You Are Looking For
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#6B7280] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
             Choose your role, enter your supermarket or product details, and continue directly on WhatsApp.
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
           {/* Role Selector Tabs */}
-          <div className="flex flex-wrap items-center justify-center p-1.5 bg-[#FEF9C3]/30 rounded-2xl mb-8 gap-1.5 border border-[#E5E7EB] shadow-xs">
+          <div className="flex flex-wrap items-center justify-center p-1.5 bg-(--accent-light)/30 rounded-2xl mb-8 gap-1.5 border border-(--border) shadow-xs">
             <button
               type="button"
               onClick={() => handleRoleSelect("gym-owner")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "gym-owner"
-                  ? "bg-[#1F1F1F] text-[#FEF9C3] shadow-xs"
-                  : "text-[#1F1F1F] hover:bg-[#FEF9C3]"
+                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
               <Store className="w-4 h-4 flex-shrink-0" />
@@ -165,8 +165,8 @@ ${detailsText}`;
               onClick={() => handleRoleSelect("wellness")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "wellness"
-                  ? "bg-[#1F1F1F] text-[#FEF9C3] shadow-xs"
-                  : "text-[#1F1F1F] hover:bg-[#FEF9C3]"
+                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
               <Utensils className="w-4 h-4 flex-shrink-0" />
@@ -178,8 +178,8 @@ ${detailsText}`;
               onClick={() => handleRoleSelect("general")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "general"
-                  ? "bg-[#1F1F1F] text-[#FEF9C3] shadow-xs"
-                  : "text-[#1F1F1F] hover:bg-[#FEF9C3]"
+                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
               <HelpCircle className="w-4 h-4 flex-shrink-0" />
@@ -190,18 +190,18 @@ ${detailsText}`;
           {/* Form Box */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-[#E5E7EB] bg-[#F9FAFB] p-4 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-(--border) bg-(--background) p-4 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
           >
             {submitted && (
-              <div className="bg-[#FEF9C3] border border-[#1F1F1F]/30 text-[#1F1F1F] p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
-                <CheckCircle2 className="w-5 h-5 text-[#1F1F1F] flex-shrink-0" />
+              <div className="bg-(--accent-light) border border-[#1F1F1F]/30 text-(--text) p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
+                <CheckCircle2 className="w-5 h-5 text-(--text) flex-shrink-0" />
                 <span>Opening WhatsApp with your enquiry details...</span>
               </div>
             )}
 
             {/* Common Field: Full Name */}
             <div>
-              <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="fullName">
+              <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="fullName">
                 Full Name *
               </label>
               <input
@@ -211,7 +211,7 @@ ${detailsText}`;
                 value={formData.fullName}
                 onChange={handleChange}
                 placeholder="e.g. Rahul Sharma"
-                className={`w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm sm:text-base min-h-[44px] ${
+                className={`w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm sm:text-base min-h-[44px] ${
                   errors.fullName ? "border-red-500 bg-red-50/30" : ""
                 }`}
               />
@@ -221,7 +221,7 @@ ${detailsText}`;
             {/* Supermarket Owner specific field */}
             {role === "gym-owner" && (
               <div>
-                <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="bakeryName">
+                <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="bakeryName">
                   Supermarket / Store Name *
                 </label>
                 <input
@@ -231,7 +231,7 @@ ${detailsText}`;
                   value={formData.bakeryName}
                   onChange={handleChange}
                   placeholder="e.g. FreshMart Supermarket"
-                  className={`w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm ${
+                  className={`w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm ${
                     errors.bakeryName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -242,7 +242,7 @@ ${detailsText}`;
             {/* Product Brand Entrepreneur specific field */}
             {role === "wellness" && (
               <div>
-                <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="brandName">
+                <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="brandName">
                   Brand Name *
                 </label>
                 <input
@@ -252,7 +252,7 @@ ${detailsText}`;
                   value={formData.brandName}
                   onChange={handleChange}
                   placeholder="e.g. FreshBites Foods"
-                  className={`w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm ${
+                  className={`w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm ${
                     errors.brandName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -263,7 +263,7 @@ ${detailsText}`;
             {/* Phone & City Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="phone">
+                <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="phone">
                   Phone Number *
                 </label>
                 <input
@@ -273,7 +273,7 @@ ${detailsText}`;
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="7995424477"
-                  className={`w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm ${
+                  className={`w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm ${
                     errors.phone ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -281,7 +281,7 @@ ${detailsText}`;
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="city">
+                <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="city">
                   City *
                 </label>
                 <input
@@ -291,7 +291,7 @@ ${detailsText}`;
                   value={formData.city || initialSearchValues?.location || ""}
                   onChange={handleChange}
                   placeholder="e.g. Hyderabad"
-                  className={`w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm ${
+                  className={`w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm ${
                     errors.city ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -303,7 +303,7 @@ ${detailsText}`;
             {role === "gym-owner" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="availableSpace">
+                  <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="availableSpace">
                     Available Retail Space Type
                   </label>
                   <select
@@ -311,7 +311,7 @@ ${detailsText}`;
                     name="availableSpace"
                     value={formData.availableSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                    className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
                   >
                     <option value="Supermarket Shelf Display">Supermarket Shelf Display</option>
                     <option value="End-Cap Display">End-Cap Display</option>
@@ -324,7 +324,7 @@ ${detailsText}`;
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="rackSize">
+                  <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="rackSize">
                     Display Space Size
                   </label>
                   <select
@@ -332,7 +332,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                    className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -349,7 +349,7 @@ ${detailsText}`;
               <div className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="category">
+                    <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="category">
                       Product Category
                     </label>
                     <select
@@ -357,7 +357,7 @@ ${detailsText}`;
                       name="category"
                       value={formData.category || initialSearchValues?.category || "Packaged Foods & FMCG"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                      className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
                     >
                       <option value="Packaged Foods & FMCG">Packaged Foods & FMCG</option>
                       <option value="Beverages & Ready-to-Drink Products">Beverages & Ready-to-Drink Products</option>
@@ -369,7 +369,7 @@ ${detailsText}`;
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="requiredSpace">
+                    <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="requiredSpace">
                       Required Space Type
                     </label>
                     <select
@@ -377,7 +377,7 @@ ${detailsText}`;
                       name="requiredSpace"
                       value={formData.requiredSpace || initialSearchValues?.spaceType || "Supermarket Shelf Display"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                      className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
                     >
                       <option value="Supermarket Shelf Display">Supermarket Shelf Display</option>
                       <option value="End-Cap Display">End-Cap Display</option>
@@ -391,7 +391,7 @@ ${detailsText}`;
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="rackSize">
+                  <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="rackSize">
                     Display Space Size
                   </label>
                   <select
@@ -399,7 +399,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                    className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -413,7 +413,7 @@ ${detailsText}`;
 
             {/* Message Field */}
             <div>
-              <label className="block text-xs font-bold text-[#1F1F1F] uppercase tracking-wider mb-1.5" htmlFor="message">
+              <label className="block text-xs font-bold text-(--text) uppercase tracking-wider mb-1.5" htmlFor="message">
                 Short Message
               </label>
               <textarea
@@ -423,7 +423,7 @@ ${detailsText}`;
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Share your available supermarket space, product category, rental preference, or any additional requirements..."
-                className="w-full rounded-xl border border-[#E5E7EB] bg-[#F9FAFB] px-4 py-3 text-[#4B5563] outline-none transition placeholder:text-[#6B7280]/70 focus:border-[#1F1F1F] focus:ring-4 focus:ring-[#FEF9C3] text-sm"
+                className="w-full rounded-xl border border-(--border) bg-(--background) px-4 py-3 text-(--text) outline-none transition placeholder:text-(--text-muted)/70 focus:border-(--primary) focus:ring-4 focus:ring-(--accent) text-sm"
               />
             </div>
 
@@ -431,14 +431,14 @@ ${detailsText}`;
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#FACC15] hover:bg-[#3D0710] text-[#3D0710] hover:text-[#FACC15] border border-[#1F1F1F]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-(--accent) hover:bg-(--primary-dark) text-[#3D0710] hover:text-(--accent) border border-[#1F1F1F]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 <span>Submit & Continue on WhatsApp</span>
               </button>
 
-              <p className="text-xs text-[#6B7280] text-center mt-3 flex items-center justify-center gap-1 font-semibold">
-                <AlertCircle className="w-3.5 h-3.5 text-[#1F1F1F]" />
+              <p className="text-xs text-(--text-muted) text-center mt-3 flex items-center justify-center gap-1 font-semibold">
+                <AlertCircle className="w-3.5 h-3.5 text-(--text)" />
                 <span>Your information is used only to respond to your supermarket space enquiry.</span>
               </p>
             </div>

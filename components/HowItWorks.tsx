@@ -36,22 +36,22 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFF6A3]/30 border-y border-[#F0E2E4]" id="how-it-works">
+    <section className="py-16 sm:py-24 bg-(--accent-light)/30 border-y border-(--border)" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#6B0F1A]
-                bg-[#F4E409]
+                border-2 border-(--primary)
+                bg-(--accent)
                 text-[#3D0710] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
@@ -63,12 +63,12 @@ export default function HowItWorks() {
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#6B0F1A] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#6B0F1A] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--primary) md:text-5xl">
             How It Works
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
             Five simple steps to connect supermarket owners with FMCG brands, food businesses, local manufacturers, and entrepreneurs looking for high-visibility retail display space.
           </p>
         </div>
@@ -79,22 +79,22 @@ export default function HowItWorks() {
             const IconComp = step.icon;
             return (
               <div key={step.number} className="relative flex flex-col group">
-                <div className="rounded-3xl border border-[#F0E2E4] bg-[#FFFDF5] p-5 shadow-[0_12px_35px_rgba(107,15,26,0.06)] flex flex-col items-center text-center relative group-hover:-translate-y-1.5 group-hover:scale-[1.01] group-hover:border-[#6B0F1A]/50 group-hover:shadow-[0_20px_45px_rgba(107,15,26,0.12)] transition-all duration-300 h-full">
+                <div className="rounded-3xl border border-(--border) bg-(--background) p-5 shadow-[0_12px_35px_rgba(107,15,26,0.06)] flex flex-col items-center text-center relative group-hover:-translate-y-1.5 group-hover:scale-[1.01] group-hover:border-(--primary)/50 group-hover:shadow-[0_20px_45px_rgba(107,15,26,0.12)] transition-all duration-300 h-full">
                   
                   {/* Step Number Circle */}
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#6B0F1A] font-black text-[#FFF6A3] mb-4 shadow-sm text-base border-2 border-[#F4E409] group-hover:scale-110 group-hover:bg-[#F4E409] group-hover:text-[#3D0710] group-hover:border-[#6B0F1A] transition-all duration-300">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-(--primary) font-black text-(--accent-light) mb-4 shadow-sm text-base border-2 border-(--accent) group-hover:scale-110 group-hover:bg-(--accent) group-hover:text-[#3D0710] group-hover:border-(--primary) transition-all duration-300">
                     {step.number}
                   </div>
 
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFF6A3] mb-3 text-[#6B0F1A] group-hover:bg-[#6B0F1A] group-hover:text-[#FFF6A3] transition-colors duration-300">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-(--accent-light) mb-3 text-(--primary) group-hover:bg-(--primary) group-hover:text-(--accent-light) transition-colors duration-300">
                     <IconComp className="w-5 h-5" />
                   </div>
 
-                  <h3 className="text-base font-black text-[#6B0F1A] mb-2 group-hover:text-[#B8913A] transition-colors">
+                  <h3 className="text-base font-black text-(--primary) mb-2 group-hover:text-[#B8913A] transition-colors">
                     {step.title}
                   </h3>
 
-                  <p className="text-xs text-[#5F5F5F] leading-relaxed font-medium">
+                  <p className="text-xs text-(--text-muted) leading-relaxed font-medium">
                     {step.description}
                   </p>
                 </div>
@@ -102,11 +102,11 @@ export default function HowItWorks() {
                 {/* Connecting Desktop Arrow */}
                 {idx < steps.length - 1 && (
                   <>
-                    <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-[#F4E409] text-[#3D0710] shadow-sm border border-[#6B0F1A]/20 group-hover:translate-x-1 group-hover:bg-[#3D0710] group-hover:text-[#F4E409] transition-all duration-300">
+                    <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-(--accent) text-[#3D0710] shadow-sm border border-(--primary)/20 group-hover:translate-x-1 group-hover:bg-(--primary-dark) group-hover:text-(--accent) transition-all duration-300">
                       <ArrowRight className="w-3.5 h-3.5" />
                     </div>
-                    <div className="flex lg:hidden justify-center py-2 text-[#6B0F1A]">
-                      <span className="w-6 h-6 rounded-full bg-[#FFF6A3] border border-[#6B0F1A]/20 flex items-center justify-center text-xs font-bold text-[#6B0F1A]">↓</span>
+                    <div className="flex lg:hidden justify-center py-2 text-(--primary)">
+                      <span className="w-6 h-6 rounded-full bg-(--accent-light) border border-(--primary)/20 flex items-center justify-center text-xs font-bold text-(--primary)">↓</span>
                     </div>
                   </>
                 )}

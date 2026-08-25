@@ -20,7 +20,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F9FAFB] border-t border-[#E5E7EB]" id="pricing">
+    <section className="py-16 sm:py-24 bg-(--background) border-t border-(--border)" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -35,7 +35,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 px-5 py-2
                 rounded-full
                 border-2 border-[#1F1F1F]
-                bg-[#FACC15]
+                bg-(--accent)
                 text-[#3D0710] font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
@@ -49,10 +49,10 @@ export default function Pricing({ onSelectRole }: PricingProps) {
             {/* Right Line */}
             <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
           </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#1F1F1F] md:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Simple & Transparent Options
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#6B7280] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
             No hidden commissions. Direct, transparent terms tailored for supermarket owners and product brands.
           </p>
         </div>
@@ -64,34 +64,34 @@ export default function Pricing({ onSelectRole }: PricingProps) {
               key={tier.id}
               className={`group rounded-3xl border-2 p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 tier.highlighted
-                  ? "border-[#1F1F1F] bg-[#FEF9C3]/20 shadow-[0_16px_40px_rgba(107,15,26,0.12)]"
-                  : "border-[#E5E7EB] bg-[#F9FAFB] shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+                  ? "border-[#1F1F1F] bg-(--accent-light)/20 shadow-[0_16px_40px_rgba(107,15,26,0.12)]"
+                  : "border-(--border) bg-(--background) shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
               }`}
             >
               {tier.highlighted && (
-                <span className="absolute -top-3.5 left-6 bg-[#1F1F1F] text-[#FEF9C3] text-[10px] font-black tracking-widest uppercase py-1 px-3.5 rounded-full border border-[#FEF9C3]/20">
+                <span className="absolute -top-3.5 left-6 bg-[#1F1F1F] text-(--accent-light) text-[10px] font-black tracking-widest uppercase py-1 px-3.5 rounded-full border border-(--accent-light)/20">
                   Most Popular
                 </span>
               )}
 
               <div>
-                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5E7EB]">
-                  <h3 className="text-xl font-extrabold text-[#1F1F1F] group-hover:text-[#4B5563] transition-colors duration-300">
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-(--border)">
+                  <h3 className="text-xl font-extrabold text-(--text) group-hover:text-(--text) transition-colors duration-300">
                     {tier.title}
                   </h3>
-                  <div className="p-3 rounded-2xl bg-[#FEF9C3] text-[#1F1F1F]">
+                  <div className="p-3 rounded-2xl bg-(--accent-light) text-(--text)">
                     {tier.roleType === "gym-owner" ? <Store className="w-6 h-6" /> : <Tag className="w-6 h-6" />}
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <span className="text-4xl font-black text-[#1F1F1F]">
+                  <span className="text-4xl font-black text-(--text)">
                     {tier.priceDisplay}
                   </span>
-                  <span className="text-sm font-bold text-[#6B7280] ml-2">
+                  <span className="text-sm font-bold text-(--text-muted) ml-2">
                     / {tier.period}
                   </span>
-                  <p className="text-xs text-[#6B7280] mt-2 font-medium">
+                  <p className="text-xs text-(--text-muted) mt-2 font-medium">
                     {tier.description}
                   </p>
                 </div>
@@ -99,8 +99,8 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 <div className="space-y-3 mb-8">
                   {tier.features.map((feat, idx) => (
                     <div key={idx} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#1F1F1F] flex-shrink-0" />
-                      <span className="text-sm font-extrabold text-[#4B5563]">{feat}</span>
+                      <CheckCircle2 className="w-5 h-5 text-(--text) flex-shrink-0" />
+                      <span className="text-sm font-extrabold text-(--text)">{feat}</span>
                     </div>
                   ))}
                 </div>
@@ -111,8 +111,8 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 onClick={() => handlePricingClick(tier.roleType)}
                 className={`w-full py-4 px-6 rounded-full font-extrabold transition-all shadow-xs cursor-pointer text-center ${
                   tier.highlighted
-                    ? "bg-[#FACC15] text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-[#3D0710] hover:text-[#FACC15]"
-                    : "bg-[#1F1F1F] text-[#FEF9C3] hover:bg-[#3D0710] hover:text-[#FACC15]"
+                    ? "bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
+                    : "bg-[#1F1F1F] text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
                 }`}
               >
                 {tier.ctaLabel}
