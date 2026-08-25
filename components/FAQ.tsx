@@ -28,7 +28,7 @@ export default function FAQ() {
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap

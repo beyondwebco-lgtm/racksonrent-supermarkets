@@ -22,7 +22,7 @@ export const SAMPLE_OPPORTUNITIES: OpportunityExample[] = [
     arrangement: "Monthly Supermarket Space Rental",
     badgeText: "Featured Supermarket",
     description: "Prime eye-level shelf display inside a popular supermarket serving 1000+ daily shoppers.",
-    bgGradient: "from-[#3D0710] to-[#6B0F1A]"
+    bgGradient: "from-[#650000] to-[#650000]"
   },
   {
     id: "checkout-counter-rack",
@@ -46,7 +46,7 @@ export const SAMPLE_OPPORTUNITIES: OpportunityExample[] = [
     arrangement: "Monthly Sublet Space Arrangement",
     badgeText: "Prime End-Cap",
     description: "Illuminated end-cap display positioned at the intersection of main grocery aisles.",
-    bgGradient: "from-[#3D0710] to-[#6B0F1A]"
+    bgGradient: "from-[#650000] to-[#650000]"
   },
   {
     id: "beverage-chilled-rack",

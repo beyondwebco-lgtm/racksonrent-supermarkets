@@ -175,7 +175,7 @@ export default function GymSpaceShowcase({
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -233,7 +233,7 @@ export default function GymSpaceShowcase({
           ref={showcaseRef}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
-          className="relative bg-(--background) rounded-3xl border-2 border-[#1F1F1F] p-4 sm:p-10 px-4 sm:px-14 lg:px-16 shadow-[0_24px_70px_rgba(107,15,26,0.12)] overflow-hidden"
+          className="relative bg-(--background) rounded-3xl border-2 border-[#1F1F1F] p-4 sm:p-10 px-4 sm:px-14 lg:px-16 shadow-[0_24px_70px_rgba(101,0,0,0.12)] overflow-hidden"
         >
           {/* Left Arrow Button on Left Side of Box */}
           <button
@@ -285,7 +285,7 @@ export default function GymSpaceShowcase({
                   {activeCategory.suitableFor.map((item, idx) => (
                     <span
                       key={idx}
-                      className="px-2.5 py-1 rounded-lg bg-(--accent-light)/60 text-[#3D0710] text-[11px] sm:text-xs font-bold border border-[#1F1F1F]/10"
+                      className="px-2.5 py-1 rounded-lg bg-(--accent-light)/60 text-(--primary) text-[11px] sm:text-xs font-bold border border-[#1F1F1F]/10"
                     >
                       {item}
                     </span>
@@ -314,7 +314,7 @@ export default function GymSpaceShowcase({
                 <button
                   type="button"
                   onClick={handleCtaPrimaryClick}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/30 px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-(--primary) border border-[#1F1F1F]/30 px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
                 >
                   <Utensils className="w-4 h-4" />
                   <span>{activeCategory.primaryCta}</span>
@@ -334,7 +334,7 @@ export default function GymSpaceShowcase({
 
             {/* Right Column: Featured Category Image */}
             <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-[#1F1F1F]/20 bg-(--primary-dark) shadow-[0_16px_40px_rgba(107,15,26,0.15)] aspect-4/5 w-full max-w-lg mx-auto group">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#1F1F1F]/20 bg-(--primary-dark) shadow-[0_16px_40px_rgba(101,0,0,0.15)] aspect-4/5 w-full max-w-lg mx-auto group">
                 <Image
                   key={activeCategory.id}
                   src={activeCategory.image}

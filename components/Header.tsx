@@ -112,15 +112,15 @@ export default function Header({ onSelectRole }: HeaderProps) {
             {/* Main Brand Title */}
             <div className="flex items-baseline font-black tracking-tighter leading-none text-lg sm:text-2xl lg:text-3xl">
               <span className="text-(--primary) font-black italic">Racks</span>
-              <span className="text-(--accent) font-bold italic lowercase mx-0.5 sm:mx-1 text-[0.8em]" style={{ fontFamily: "Georgia, serif", WebkitTextStroke: "1px #6B0F1A" }}>on</span>
-              <span className="text-(--accent) font-black italic" style={{ WebkitTextStroke: "1px #6B0F1A" }}>Rent</span>
+              <span className="text-(--accent) font-bold italic lowercase mx-0.5 sm:mx-1 text-[0.8em]" style={{ fontFamily: "Georgia, serif", WebkitTextStroke: "1px #650000" }}>on</span>
+              <span className="text-(--accent) font-black italic" style={{ WebkitTextStroke: "1px #650000" }}>Rent</span>
             </div>
 
             {/* Tagline */}
             <div className="flex items-center gap-0.5 sm:gap-1 mt-0.5 text-[7px] sm:text-[9px] lg:text-[10px] font-black uppercase tracking-[0.12em] sm:tracking-[0.18em] leading-none whitespace-nowrap">
               <span className="h-[1.5px] w-2 sm:w-3 bg-(--primary) inline-block" />
               <span className="text-(--primary)">SUBLET SPACE.</span>
-              <span className="text-(--accent)" style={{ WebkitTextStroke: "0.5px #6B0F1A" }}>SHARE SUCCESS.</span>
+              <span className="text-(--accent)" style={{ WebkitTextStroke: "0.5px #650000" }}>SHARE SUCCESS.</span>
               <span className="h-[1.5px] w-2 sm:w-3 bg-(--primary) inline-block" />
             </div>
           </div>
@@ -206,13 +206,13 @@ export default function Header({ onSelectRole }: HeaderProps) {
               <div className="flex flex-col justify-center">
                 <div className="flex items-baseline font-black tracking-tighter leading-none text-lg">
                   <span className="text-(--primary) font-black italic">Racks</span>
-                  <span className="text-(--accent) font-bold italic lowercase mx-0.5 text-[0.8em]" style={{ fontFamily: "Georgia, serif", WebkitTextStroke: "1px #6B0F1A" }}>on</span>
-                  <span className="text-(--accent) font-black italic" style={{ WebkitTextStroke: "1px #6B0F1A" }}>Rent</span>
+                  <span className="text-(--accent) font-bold italic lowercase mx-0.5 text-[0.8em]" style={{ fontFamily: "Georgia, serif", WebkitTextStroke: "1px #650000" }}>on</span>
+                  <span className="text-(--accent) font-black italic" style={{ WebkitTextStroke: "1px #650000" }}>Rent</span>
                 </div>
                 <div className="flex items-center gap-1 mt-0.5 text-[8px] font-black uppercase tracking-[0.15em] leading-none whitespace-nowrap">
                   <span className="h-[1px] w-2 bg-(--primary) inline-block" />
                   <span className="text-(--primary)">SUBLET.</span>
-                  <span className="text-(--accent)" style={{ WebkitTextStroke: "0.5px #6B0F1A" }}>SHARE.</span>
+                  <span className="text-(--accent)" style={{ WebkitTextStroke: "0.5px #650000" }}>SHARE.</span>
                   <span className="h-[1px] w-2 bg-(--primary) inline-block" />
                 </div>
               </div>

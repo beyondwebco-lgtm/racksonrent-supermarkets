@@ -52,7 +52,7 @@ export default function HowItWorks() {
                 rounded-full
                 border-2 border-(--primary)
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -79,10 +79,10 @@ export default function HowItWorks() {
             const IconComp = step.icon;
             return (
               <div key={step.number} className="relative flex flex-col group">
-                <div className="rounded-3xl border border-(--border) bg-(--background) p-5 shadow-[0_12px_35px_rgba(107,15,26,0.06)] flex flex-col items-center text-center relative group-hover:-translate-y-1.5 group-hover:scale-[1.01] group-hover:border-(--primary)/50 group-hover:shadow-[0_20px_45px_rgba(107,15,26,0.12)] transition-all duration-300 h-full">
+                <div className="rounded-3xl border border-(--border) bg-(--background) p-5 shadow-[0_12px_35px_rgba(101,0,0,0.06)] flex flex-col items-center text-center relative group-hover:-translate-y-1.5 group-hover:scale-[1.01] group-hover:border-(--primary)/50 group-hover:shadow-[0_20px_45px_rgba(101,0,0,0.12)] transition-all duration-300 h-full">
                   
                   {/* Step Number Circle */}
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-(--primary) font-black text-(--accent-light) mb-4 shadow-sm text-base border-2 border-(--accent) group-hover:scale-110 group-hover:bg-(--accent) group-hover:text-[#3D0710] group-hover:border-(--primary) transition-all duration-300">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-(--primary) font-black text-(--accent-light) mb-4 shadow-sm text-base border-2 border-(--accent) group-hover:scale-110 group-hover:bg-(--accent) group-hover:text-(--primary) group-hover:border-(--primary) transition-all duration-300">
                     {step.number}
                   </div>
 
@@ -90,7 +90,7 @@ export default function HowItWorks() {
                     <IconComp className="w-5 h-5" />
                   </div>
 
-                  <h3 className="text-base font-black text-(--primary) mb-2 group-hover:text-[#B8913A] transition-colors">
+                  <h3 className="text-base font-black text-(--primary) mb-2 group-hover:text-(--primary) transition-colors">
                     {step.title}
                   </h3>
 
@@ -102,7 +102,7 @@ export default function HowItWorks() {
                 {/* Connecting Desktop Arrow */}
                 {idx < steps.length - 1 && (
                   <>
-                    <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-(--accent) text-[#3D0710] shadow-sm border border-(--primary)/20 group-hover:translate-x-1 group-hover:bg-(--primary-dark) group-hover:text-(--accent) transition-all duration-300">
+                    <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-(--accent) text-(--primary) shadow-sm border border-(--primary)/20 group-hover:translate-x-1 group-hover:bg-(--primary-dark) group-hover:text-(--accent) transition-all duration-300">
                       <ArrowRight className="w-3.5 h-3.5" />
                     </div>
                     <div className="flex lg:hidden justify-center py-2 text-(--primary)">

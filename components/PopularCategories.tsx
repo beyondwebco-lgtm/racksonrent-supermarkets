@@ -90,7 +90,7 @@ export default function PopularCategories() {
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -174,7 +174,7 @@ export default function PopularCategories() {
                   }}
                   className={`group absolute w-[calc(100vw-72px)] max-w-[340px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-(--background) p-4 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
                     isActive
-                      ? "border-[#1F1F1F] shadow-[0_20px_50px_rgba(107,15,26,0.22)]"
+                      ? "border-[#1F1F1F] shadow-[0_20px_50px_rgba(101,0,0,0.22)]"
                       : "border-[#1F1F1F]/20 pointer-events-auto hover:opacity-75"
                   }`}
                 >

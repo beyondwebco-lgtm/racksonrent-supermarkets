@@ -36,7 +36,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -64,8 +64,8 @@ export default function Pricing({ onSelectRole }: PricingProps) {
               key={tier.id}
               className={`group rounded-3xl border-2 p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 tier.highlighted
-                  ? "border-[#1F1F1F] bg-(--accent-light)/20 shadow-[0_16px_40px_rgba(107,15,26,0.12)]"
-                  : "border-(--border) bg-(--background) shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+                  ? "border-[#1F1F1F] bg-(--accent-light)/20 shadow-[0_16px_40px_rgba(101,0,0,0.12)]"
+                  : "border-(--border) bg-(--background) shadow-[0_12px_35px_rgba(101,0,0,0.06)]"
               }`}
             >
               {tier.highlighted && (
@@ -111,7 +111,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 onClick={() => handlePricingClick(tier.roleType)}
                 className={`w-full py-4 px-6 rounded-full font-extrabold transition-all shadow-xs cursor-pointer text-center ${
                   tier.highlighted
-                    ? "bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
+                    ? "bg-(--accent) text-(--primary) border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
                     : "bg-[#1F1F1F] text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
                 }`}
               >

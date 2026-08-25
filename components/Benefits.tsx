@@ -22,7 +22,7 @@ export default function Benefits() {
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -47,7 +47,7 @@ export default function Benefits() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           
           {/* Gift Shop Owners */}
-          <div className="group rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:border-[#1F1F1F]/30 transition-all duration-300 flex flex-col justify-between">
+          <div className="group rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(101,0,0,0.06)] hover:border-[#1F1F1F]/30 transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-6 border-b border-(--border) pb-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text)">
@@ -73,7 +73,7 @@ export default function Benefits() {
           </div>
 
           {/* Wellness Businesses */}
-          <div className="group rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:border-[#1F1F1F]/30 transition-all duration-300 flex flex-col justify-between">
+          <div className="group rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(101,0,0,0.06)] hover:border-[#1F1F1F]/30 transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-6 border-b border-(--border) pb-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text)">

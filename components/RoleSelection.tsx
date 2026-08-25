@@ -36,7 +36,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -61,7 +61,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
             return (
               <div
                 key={card.id}
-                className="rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(107,15,26,0.06)] hover:shadow-[0_20px_50px_rgba(107,15,26,0.14)] hover:border-[#1F1F1F]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
+                className="rounded-3xl border-2 border-(--border) bg-(--background) p-8 shadow-[0_12px_35px_rgba(101,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(101,0,0,0.14)] hover:border-[#1F1F1F]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text) mb-6 shadow-xs">
@@ -92,7 +92,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                   onClick={() => handleRoleClick(card.role)}
                   className={`w-full py-3.5 px-6 rounded-full font-extrabold transition-all shadow-xs cursor-pointer text-center ${
                     isGymOwner
-                      ? "bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
+                      ? "bg-(--accent) text-(--primary) border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
                       : "bg-[#1F1F1F] text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
                   }`}
                 >

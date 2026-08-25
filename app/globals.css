@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-maroon: #6B0F1A;
-  --color-dark-maroon: #3D0710;
-  --color-lemon-yellow: #F4E409;
-  --color-soft-lemon: #FFF6A3;
+  --color-primary-maroon: #650000;
+  --color-dark-maroon: #650000;
+  --color-lemon-yellow: #FAFA33;
+  --color-soft-lemon: #FFFBCC;
   --color-warm-white: #FFFDF5;
   --color-dark-text: #1F1F1F;
   --color-muted-text: #5F5F5F;
@@ -241,8 +241,8 @@ h6 {
 @media (hover: hover) and (pointer: fine) {
   .card-hover-system:hover {
     transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 16px 40px rgba(107, 15, 26, 0.12);
-    border-color: rgba(107, 15, 26, 0.4);
+    box-shadow: 0 16px 40px rgba(101, 0, 0, 0.12);
+    border-color: rgba(101, 0, 0, 0.4);
   }
 }
 

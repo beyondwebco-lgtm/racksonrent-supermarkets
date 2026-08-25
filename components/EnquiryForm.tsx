@@ -123,7 +123,7 @@ ${detailsText}`;
                 rounded-full
                 border-2 border-[#1F1F1F]
                 bg-(--accent)
-                text-[#3D0710] font-bold
+                text-(--primary) font-bold
                 text-xs sm:text-sm
                 tracking-widest uppercase
                 whitespace-nowrap
@@ -190,7 +190,7 @@ ${detailsText}`;
           {/* Form Box */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-(--border) bg-(--background) p-4 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-(--border) bg-(--background) p-4 sm:p-10 shadow-[0_12px_35px_rgba(101,0,0,0.06)]"
           >
             {submitted && (
               <div className="bg-(--accent-light) border border-[#1F1F1F]/30 text-(--text) p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
@@ -431,7 +431,7 @@ ${detailsText}`;
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-(--accent) hover:bg-(--primary-dark) text-[#3D0710] hover:text-(--accent) border border-[#1F1F1F]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-(--accent) hover:bg-(--primary-dark) text-(--primary) hover:text-(--accent) border border-[#1F1F1F]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 <span>Submit & Continue on WhatsApp</span>

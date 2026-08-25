@@ -58,7 +58,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
   ];
 
   return (
-    <section className="relative pt-8 pb-12 lg:pt-16 lg:pb-20 bg-[radial-gradient(circle_at_80%_20%,rgba(107,15,26,0.08),transparent_40%),linear-gradient(180deg,#FFFDF5_0%,#FFF6A3_25%,#FFFDF5_100%)] border-b border-(--border)" id="hero">
+    <section className="relative pt-8 pb-12 lg:pt-16 lg:pb-20 bg-[radial-gradient(circle_at_80%_20%,rgba(101,0,0,0.08),transparent_40%),linear-gradient(180deg,#FFFDF5_0%,#FFFBCC_25%,#FFFDF5_100%)] border-b border-(--border)" id="hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
@@ -72,7 +72,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
             <h1 className="fluid-hero-title font-extrabold tracking-tight text-(--text)">
               Give Your Products a Place{" "}
-              <span className="bg-(--accent) text-[#3D0710] px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F1F1F]/20">
+              <span className="bg-(--accent) text-(--primary) px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F1F1F]/20">
                 Inside a Busy Supermarket.
               </span>
             </h1>
@@ -97,7 +97,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
             <div className="relative pt-4">
               <div className="w-16 h-0.5 bg-[#1F1F1F]/30 rounded-full animate-accent-line mb-3" />
 
-              <div className="absolute inset-0 -top-1 bg-[radial-gradient(ellipse_at_center,rgba(244,228,9,0.30),transparent_70%)] pointer-events-none rounded-3xl blur-md animate-cta-pulse-group" />
+              <div className="absolute inset-0 -top-1 bg-[radial-gradient(ellipse_at_center,rgba(250,250,51,0.30),transparent_70%)] pointer-events-none rounded-3xl blur-md animate-cta-pulse-group" />
 
               <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 z-10">
                 
@@ -107,7 +107,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("wellness")}
                   onMouseMove={handleMouseMoveBtn1}
                   onMouseLeave={handleMouseLeaveBtn1}
-                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-(--accent) border-2 border-[#1F1F1F]/20 px-5 sm:px-6 py-3.5 text-[#3D0710] shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-(--accent) border-2 border-[#1F1F1F]/20 px-5 sm:px-6 py-3.5 text-(--primary) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none" />
 
@@ -133,7 +133,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("gym-owner")}
                   onMouseMove={handleMouseMoveBtn2}
                   onMouseLeave={handleMouseLeaveBtn2}
-                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F1F1F] bg-[#1F1F1F] px-5 sm:px-6 py-3.5 text-(--accent-light) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(107,15,26,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F1F1F] bg-[#1F1F1F] px-5 sm:px-6 py-3.5 text-(--accent-light) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-(--accent)/30 to-transparent pointer-events-none" />
 
@@ -160,7 +160,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
           {/* Right Column (High Quality Gift Shop Showcase Image / Video) */}
           <div className="lg:col-span-5 relative mt-6 lg:mt-0">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-(--border) bg-(--background) p-2 sm:p-3 shadow-[0_24px_70px_rgba(107,15,26,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(107,15,26,0.18)] hover:border-(--accent)/60 group">
+              <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-(--border) bg-(--background) p-2 sm:p-3 shadow-[0_24px_70px_rgba(101,0,0,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(101,0,0,0.18)] hover:border-(--accent)/60 group">
                 <div className="relative aspect-4/3 w-full rounded-xl sm:rounded-2xl overflow-hidden bg-(--accent-light)/20">
                   <video
                     src="/Racks_On_Rent_connects_bakery.mp4"

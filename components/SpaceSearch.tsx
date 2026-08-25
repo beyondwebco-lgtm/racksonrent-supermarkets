@@ -42,7 +42,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <form
           onSubmit={handleSearchSubmit}
-          className="bg-(--background) rounded-3xl border-2 border-[#1F1F1F] p-4 sm:p-5 shadow-[0_16px_40px_rgba(107,15,26,0.12)]"
+          className="bg-(--background) rounded-3xl border-2 border-[#1F1F1F] p-4 sm:p-5 shadow-[0_16px_40px_rgba(101,0,0,0.12)]"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 items-end">
             
@@ -126,7 +126,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
             <div className="col-span-1">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-[#3D0710] border border-[#1F1F1F]/30 px-4 py-2.5 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-(--primary) border border-[#1F1F1F]/30 px-4 py-2.5 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
               >
                 <Search className="w-4 h-4" />
                 <span>Search Spaces</span>
