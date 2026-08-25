@@ -14,5 +14,5 @@ The design system for **Racks on Rent** relies on the following official color p
 - **Soft Lemon**: `#FFFBCC` (`--color-soft-lemon`, `--accent-light`, `--background-soft`) — Badge backgrounds, soft highlighted cards, secondary accents.
 - **Warm White**: `#FFFDF5` (`--color-warm-white`, `--background`, `--surface`) — Main page background and warm card containers.
 - **Soft Border**: `#F0E2E4` (`--color-soft-border`, `--border`) — Subtle border lines and card dividers.
-- **Dark Text**: `#1F1F1F` (`--color-dark-text`, `--text`) — Main body text for high readability.
+- **Dark Text**: `#C29000` (`--color-dark-text`, `--text`) — Main body text for high readability.
 - **Muted Text**: `#5F5F5F` (`--color-muted-text`, `--text-muted`) — Subtitles, captions, and secondary text.
