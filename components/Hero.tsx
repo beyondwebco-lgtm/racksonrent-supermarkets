@@ -72,7 +72,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
             <h1 className="fluid-hero-title font-extrabold tracking-tight text-(--text)">
               Give Your Products a Place{" "}
-              <span className="bg-(--accent) text-(--primary) px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-[#1F1F1F]/20">
+              <span className="bg-(--accent) text-(--primary) px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-(--primary)/20">
                 Inside a Busy Supermarket.
               </span>
             </h1>
@@ -95,7 +95,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
             {/* Animated 2 Primary CTAs */}
             <div className="relative pt-4">
-              <div className="w-16 h-0.5 bg-[#1F1F1F]/30 rounded-full animate-accent-line mb-3" />
+              <div className="w-16 h-0.5 bg-(--primary)/30 rounded-full animate-accent-line mb-3" />
 
               <div className="absolute inset-0 -top-1 bg-[radial-gradient(ellipse_at_center,rgba(250,250,51,0.30),transparent_70%)] pointer-events-none rounded-3xl blur-md animate-cta-pulse-group" />
 
@@ -107,7 +107,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("wellness")}
                   onMouseMove={handleMouseMoveBtn1}
                   onMouseLeave={handleMouseLeaveBtn1}
-                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-(--accent) border-2 border-[#1F1F1F]/20 px-5 sm:px-6 py-3.5 text-(--primary) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-1 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl bg-(--accent) border-2 border-(--primary)/20 px-5 sm:px-6 py-3.5 text-(--primary) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.22)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none" />
 
@@ -133,7 +133,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   onClick={() => handleRoleClick("gym-owner")}
                   onMouseMove={handleMouseMoveBtn2}
                   onMouseLeave={handleMouseLeaveBtn2}
-                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-[#1F1F1F] bg-[#1F1F1F] px-5 sm:px-6 py-3.5 text-(--accent-light) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
+                  className="animate-cta-btn-2 flex-1 relative overflow-hidden inline-flex flex-col items-center justify-center gap-0.5 rounded-2xl border-2 border-(--primary) bg-(--primary) px-5 sm:px-6 py-3.5 text-(--accent-light) shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.018] hover:shadow-[0_14px_30px_rgba(101,0,0,0.35)] active:scale-[0.97] focus:outline-none cursor-pointer group min-h-[52px]"
                 >
                   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-(--accent)/30 to-transparent pointer-events-none" />
 
@@ -171,8 +171,8 @@ export default function Hero({ onSelectRole }: HeroProps) {
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   
-                  {/* Subtle Dark Bottom Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
+                  {/* Subtle Maroon Bottom Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#650000]/70 via-[#650000]/15 to-transparent pointer-events-none" />
 
                   {/* Overlay Badge */}
                   <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-(--primary-dark) text-white px-3.5 py-1.5 sm:px-5 sm:py-2.5 rounded-full border-2 border-(--accent) shadow-xl flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide z-10">

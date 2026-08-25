@@ -33,7 +33,7 @@ export default function HeroStats() {
   ];
 
   return (
-    <div className="bg-[#1F1F1F] text-white py-6 border-y border-(--primary-dark) shadow-md">
+    <div className="bg-(--primary-dark) text-white py-6 border-y border-(--primary) shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center divide-y sm:divide-y-0 sm:divide-x divide-(--primary-dark)/60">
           {statsList.map((stat) => (

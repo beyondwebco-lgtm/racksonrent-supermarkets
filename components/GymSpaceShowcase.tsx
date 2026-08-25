@@ -166,14 +166,14 @@ export default function GymSpaceShowcase({
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#1F1F1F]
+                border-2 border-(--primary)
                 bg-(--accent)
                 text-(--primary) font-bold
                 text-xs sm:text-sm
@@ -186,7 +186,7 @@ export default function GymSpaceShowcase({
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             <span className="hidden sm:inline">Choose What You Want to Display Inside a Supermarket</span>
@@ -216,7 +216,7 @@ export default function GymSpaceShowcase({
                   }}
                   className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-extrabold border transition-all cursor-pointer ${
                     isActive
-                      ? "bg-[#1F1F1F] text-(--accent-light) border-(--accent) shadow-md scale-105"
+                      ? "bg-(--primary) text-(--accent-light) border-(--accent) shadow-md scale-105"
                       : "bg-(--background) text-(--text) border-(--border) hover:bg-(--accent-light)/40"
                   }`}
                 >
@@ -233,14 +233,14 @@ export default function GymSpaceShowcase({
           ref={showcaseRef}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
-          className="relative bg-(--background) rounded-3xl border-2 border-[#1F1F1F] p-4 sm:p-10 px-4 sm:px-14 lg:px-16 shadow-[0_24px_70px_rgba(101,0,0,0.12)] overflow-hidden"
+          className="relative bg-(--background) rounded-3xl border-2 border-(--border) p-4 sm:p-10 px-4 sm:px-14 lg:px-16 shadow-[0_24px_70px_rgba(101,0,0,0.12)] overflow-hidden"
         >
           {/* Left Arrow Button on Left Side of Box */}
           <button
             type="button"
             onClick={handlePrev}
             aria-label="Previous space category"
-            className="absolute left-1.5 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-[#1F1F1F] text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-lg hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-105 transition-all cursor-pointer active:scale-95 touch-target"
+            className="absolute left-1.5 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-(--primary) text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-lg hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-105 transition-all cursor-pointer active:scale-95 touch-target"
           >
             <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
@@ -250,7 +250,7 @@ export default function GymSpaceShowcase({
             type="button"
             onClick={handleNext}
             aria-label="Next space category"
-            className="absolute right-1.5 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-[#1F1F1F] text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-lg hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-105 transition-all cursor-pointer active:scale-95 touch-target"
+            className="absolute right-1.5 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-(--primary) text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-lg hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-105 transition-all cursor-pointer active:scale-95 touch-target"
           >
             <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
@@ -264,7 +264,7 @@ export default function GymSpaceShowcase({
               }`}
             >
               <div>
-                <span className="inline-flex rounded-full bg-(--accent-light) px-3.5 py-1 text-xs font-black text-(--text) border border-[#1F1F1F]/20">
+                <span className="inline-flex rounded-full bg-(--accent-light) px-3.5 py-1 text-xs font-black text-(--text) border border-(--primary)/20">
                   {activeCategory.eyebrow}
                 </span>
                 <h3 className="mt-2.5 text-xl sm:text-3xl lg:text-4xl font-extrabold text-(--text) leading-snug">
@@ -285,7 +285,7 @@ export default function GymSpaceShowcase({
                   {activeCategory.suitableFor.map((item, idx) => (
                     <span
                       key={idx}
-                      className="px-2.5 py-1 rounded-lg bg-(--accent-light)/60 text-(--primary) text-[11px] sm:text-xs font-bold border border-[#1F1F1F]/10"
+                      className="px-2.5 py-1 rounded-lg bg-(--accent-light)/60 text-(--primary) text-[11px] sm:text-xs font-bold border border-(--primary)/10"
                     >
                       {item}
                     </span>
@@ -314,7 +314,7 @@ export default function GymSpaceShowcase({
                 <button
                   type="button"
                   onClick={handleCtaPrimaryClick}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-(--primary) border border-[#1F1F1F]/30 px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--accent) text-(--primary) border border-(--primary)/30 px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
                 >
                   <Utensils className="w-4 h-4" />
                   <span>{activeCategory.primaryCta}</span>
@@ -323,7 +323,7 @@ export default function GymSpaceShowcase({
                 <button
                   type="button"
                   onClick={handleCtaSecondaryClick}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#1F1F1F] text-(--accent-light) border border-[#1F1F1F] px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--primary) text-(--accent-light) border border-(--primary) px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
                 >
                   <Store className="w-4 h-4 text-(--accent)" />
                   <span>{activeCategory.secondaryCta}</span>
@@ -334,7 +334,7 @@ export default function GymSpaceShowcase({
 
             {/* Right Column: Featured Category Image */}
             <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-[#1F1F1F]/20 bg-(--primary-dark) shadow-[0_16px_40px_rgba(101,0,0,0.15)] aspect-4/5 w-full max-w-lg mx-auto group">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-(--primary)/20 bg-(--primary-dark) shadow-[0_16px_40px_rgba(101,0,0,0.15)] aspect-4/5 w-full max-w-lg mx-auto group">
                 <Image
                   key={activeCategory.id}
                   src={activeCategory.image}
@@ -347,8 +347,8 @@ export default function GymSpaceShowcase({
                   }`}
                 />
                 
-                {/* Dark Gradient at Bottom for Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+                {/* Maroon Gradient at Bottom for Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#650000]/80 via-[#650000]/20 to-transparent pointer-events-none" />
 
                 {/* Floating Category Label */}
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-(--primary-dark) text-white px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl border-2 border-(--accent) shadow-xl flex items-center justify-between text-xs sm:text-sm lg:text-base font-bold tracking-wide z-10">

@@ -20,14 +20,14 @@ export default function SpaceTypes() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#1F1F1F]
+                border-2 border-(--primary)
                 bg-(--accent)
                 text-(--primary) font-bold
                 text-xs sm:text-sm
@@ -40,7 +40,7 @@ export default function SpaceTypes() {
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             What Kind of Space Can Be Offered?
@@ -56,10 +56,10 @@ export default function SpaceTypes() {
           {COMPACT_SPACE_TYPES.map((item) => (
             <div
               key={item.id}
-              className="rounded-3xl border border-(--border) bg-(--background) p-6 shadow-[0_12px_35px_rgba(101,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(101,0,0,0.14)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F1F1F]/30 flex flex-col justify-between group"
+              className="rounded-3xl border border-(--border) bg-(--background) p-6 shadow-[0_12px_35px_rgba(101,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(101,0,0,0.14)] transition-all duration-300 hover:-translate-y-1 hover:border-(--primary)/30 flex flex-col justify-between group"
             >
               <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text) group-hover:bg-[#1F1F1F] transition-colors mb-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-(--accent-light) text-(--text) group-hover:bg-(--primary) group-hover:text-(--accent-light) transition-colors mb-4">
                   {iconMap[item.iconName]}
                 </div>
                 <h3 className="font-extrabold text-lg text-(--text) group-hover:text-(--text) transition-colors duration-300 mb-2">

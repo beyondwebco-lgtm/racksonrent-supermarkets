@@ -81,14 +81,14 @@ export default function PopularCategories() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#1F1F1F]
+                border-2 border-(--primary)
                 bg-(--accent)
                 text-(--primary) font-bold
                 text-xs sm:text-sm
@@ -101,7 +101,7 @@ export default function PopularCategories() {
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Popular Supermarket Product Categories
@@ -119,7 +119,7 @@ export default function PopularCategories() {
             type="button"
             onClick={prevSlide}
             aria-label="Previous category"
-            className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1F1F1F] text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-xl transition-all hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-110 active:scale-95 cursor-pointer touch-target"
+            className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-(--primary) text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-xl transition-all hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-110 active:scale-95 cursor-pointer touch-target"
           >
             <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
@@ -129,7 +129,7 @@ export default function PopularCategories() {
             type="button"
             onClick={nextSlide}
             aria-label="Next category"
-            className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#1F1F1F] text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-xl transition-all hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-110 active:scale-95 cursor-pointer touch-target"
+            className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-(--primary) text-(--accent-light) border-2 border-(--accent) flex items-center justify-center shadow-xl transition-all hover:bg-(--primary-dark) hover:text-(--accent) hover:scale-110 active:scale-95 cursor-pointer touch-target"
           >
             <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
           </button>
@@ -174,8 +174,8 @@ export default function PopularCategories() {
                   }}
                   className={`group absolute w-[calc(100vw-72px)] max-w-[340px] sm:w-[360px] cursor-pointer select-none rounded-3xl border-2 bg-(--background) p-4 sm:p-6 shadow-2xl flex flex-col justify-between overflow-hidden ${
                     isActive
-                      ? "border-[#1F1F1F] shadow-[0_20px_50px_rgba(101,0,0,0.22)]"
-                      : "border-[#1F1F1F]/20 pointer-events-auto hover:opacity-75"
+                      ? "border-(--primary) shadow-[0_20px_50px_rgba(101,0,0,0.22)]"
+                      : "border-(--border) pointer-events-auto hover:opacity-75"
                   }`}
                 >
                   <div>
@@ -231,8 +231,8 @@ export default function PopularCategories() {
                 aria-label={`Go to slide ${index + 1}`}
                 className={`transition-all duration-300 rounded-full cursor-pointer ${
                   index === activeIndex
-                    ? "w-8 h-2.5 bg-[#1F1F1F]"
-                    : "w-2.5 h-2.5 bg-[#E5E7EB] hover:bg-[#1F1F1F]/50"
+                    ? "w-8 h-2.5 bg-(--primary)"
+                    : "w-2.5 h-2.5 bg-[#E5E7EB] hover:bg-(--primary)/50"
                 }`}
               />
             ))}

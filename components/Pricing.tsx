@@ -27,14 +27,14 @@ export default function Pricing({ onSelectRole }: PricingProps) {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#1F1F1F]
+                border-2 border-(--primary)
                 bg-(--accent)
                 text-(--primary) font-bold
                 text-xs sm:text-sm
@@ -47,7 +47,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Simple & Transparent Options
@@ -64,12 +64,12 @@ export default function Pricing({ onSelectRole }: PricingProps) {
               key={tier.id}
               className={`group rounded-3xl border-2 p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 tier.highlighted
-                  ? "border-[#1F1F1F] bg-(--accent-light)/20 shadow-[0_16px_40px_rgba(101,0,0,0.12)]"
+                  ? "border-(--primary) bg-(--accent-light)/20 shadow-[0_16px_40px_rgba(101,0,0,0.12)]"
                   : "border-(--border) bg-(--background) shadow-[0_12px_35px_rgba(101,0,0,0.06)]"
               }`}
             >
               {tier.highlighted && (
-                <span className="absolute -top-3.5 left-6 bg-[#1F1F1F] text-(--accent-light) text-[10px] font-black tracking-widest uppercase py-1 px-3.5 rounded-full border border-(--accent-light)/20">
+                <span className="absolute -top-3.5 left-6 bg-(--primary) text-(--accent-light) text-[10px] font-black tracking-widest uppercase py-1 px-3.5 rounded-full border border-(--accent-light)/20">
                   Most Popular
                 </span>
               )}
@@ -111,8 +111,8 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                 onClick={() => handlePricingClick(tier.roleType)}
                 className={`w-full py-4 px-6 rounded-full font-extrabold transition-all shadow-xs cursor-pointer text-center ${
                   tier.highlighted
-                    ? "bg-(--accent) text-(--primary) border border-[#1F1F1F]/20 hover:bg-(--primary-dark) hover:text-(--accent)"
-                    : "bg-[#1F1F1F] text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
+                    ? "bg-(--accent) text-(--primary) border border-(--primary)/20 hover:bg-(--primary-dark) hover:text-(--accent)"
+                    : "bg-(--primary) text-(--accent-light) hover:bg-(--primary-dark) hover:text-(--accent)"
                 }`}
               >
                 {tier.ctaLabel}

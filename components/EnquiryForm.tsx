@@ -114,14 +114,14 @@ ${detailsText}`;
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="flex items-center justify-center gap-4 w-full mb-6">
             {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
 
             {/* Pill Badge */}
             <span
               className="
                 px-5 py-2
                 rounded-full
-                border-2 border-[#1F1F1F]
+                border-2 border-(--primary)
                 bg-(--accent)
                 text-(--primary) font-bold
                 text-xs sm:text-sm
@@ -134,7 +134,7 @@ ${detailsText}`;
             </span>
 
             {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-[#1F1F1F] opacity-40" />
+            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
           </div>
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
             Tell Us What You Are Looking For
@@ -152,7 +152,7 @@ ${detailsText}`;
               onClick={() => handleRoleSelect("gym-owner")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "gym-owner"
-                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  ? "bg-(--primary) text-(--accent-light) shadow-xs"
                   : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
@@ -165,7 +165,7 @@ ${detailsText}`;
               onClick={() => handleRoleSelect("wellness")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "wellness"
-                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  ? "bg-(--primary) text-(--accent-light) shadow-xs"
                   : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
@@ -178,7 +178,7 @@ ${detailsText}`;
               onClick={() => handleRoleSelect("general")}
               className={`flex-1 min-w-[120px] sm:min-w-[140px] min-h-[44px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                 role === "general"
-                  ? "bg-[#1F1F1F] text-(--accent-light) shadow-xs"
+                  ? "bg-(--primary) text-(--accent-light) shadow-xs"
                   : "text-(--text) hover:bg-(--accent-light)"
               }`}
             >
@@ -193,7 +193,7 @@ ${detailsText}`;
             className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-(--border) bg-(--background) p-4 sm:p-10 shadow-[0_12px_35px_rgba(101,0,0,0.06)]"
           >
             {submitted && (
-              <div className="bg-(--accent-light) border border-[#1F1F1F]/30 text-(--text) p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
+              <div className="bg-(--accent-light) border border-(--primary)/30 text-(--text) p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
                 <CheckCircle2 className="w-5 h-5 text-(--text) flex-shrink-0" />
                 <span>Opening WhatsApp with your enquiry details...</span>
               </div>
@@ -431,7 +431,7 @@ ${detailsText}`;
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-(--accent) hover:bg-(--primary-dark) text-(--primary) hover:text-(--accent) border border-[#1F1F1F]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-(--accent) hover:bg-(--primary-dark) text-(--primary) hover:text-(--accent) border border-(--primary)/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 <span>Submit & Continue on WhatsApp</span>

@@ -6,11 +6,11 @@ import { SITE_CONFIG, NAV_LINKS } from "@/data/config";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1F1F1F] bg-(--primary-dark) text-white py-12">
+    <footer className="border-t border-(--border) bg-(--primary-dark) text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Row */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-[#1F1F1F]/60">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
           
           {/* Footer Logo */}
           <Link
@@ -72,7 +72,7 @@ export default function Footer() {
               <span>{SITE_CONFIG.phoneDisplay}</span>
             </a>
 
-            <span className="text-(--text) hidden sm:inline">•</span>
+            <span className="text-(--accent)/40 hidden sm:inline">•</span>
 
             <a
               href={SITE_CONFIG.whatsappLink}
@@ -84,7 +84,7 @@ export default function Footer() {
               <span>WhatsApp</span>
             </a>
 
-            <span className="text-(--text) hidden sm:inline">•</span>
+            <span className="text-(--accent)/40 hidden sm:inline">•</span>
 
             <a
               href={SITE_CONFIG.mailtoLink}
