@@ -1,5 +1,6 @@
 import React from "react";
 import { Store, Search, Calendar, ShoppingBag, TrendingUp, ArrowRight } from "lucide-react";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function HowItWorks() {
   const steps = [
@@ -40,38 +41,11 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • 5-Step Process •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--primary) md:text-5xl">
-            How It Works
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Five simple steps to connect supermarket owners with FMCG brands, food businesses, local manufacturers, and entrepreneurs looking for high-visibility retail display space.
-          </p>
-        </div>
+        <SectionHeader
+          badge="5-Step Process"
+          title="How It Works"
+          subtitle="Five simple steps to connect supermarket owners with FMCG brands, food businesses, local manufacturers, and entrepreneurs looking for high-visibility retail display space."
+        />
 
         {/* 5 Step Cards with Desktop Arrows */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 relative">

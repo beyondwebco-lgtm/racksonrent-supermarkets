@@ -30,6 +30,7 @@ import {
   SHOWCASE_TRUST_ITEMS,
   ShowcaseCategory,
 } from "@/data/showcase";
+import SectionHeader from "@/components/SectionHeader";
 
 interface GymSpaceShowcaseProps {
   onSelectCategoryAction?: (
@@ -163,39 +164,16 @@ export default function GymSpaceShowcase({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Supermarket Display Opportunities •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            <span className="hidden sm:inline">Choose What You Want to Display Inside a Supermarket</span>
-            <span className="sm:hidden">Explore Supermarket Display Formats</span>
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Explore supermarket shelves, checkout counters, end-cap displays, refrigerated sections, promotional racks, tabletop displays, grab-and-go areas, and premium product spaces inside active retail stores.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Supermarket Display Opportunities"
+          title={
+            <>
+              <span className="hidden sm:inline">Choose What You Want to Display Inside a Supermarket</span>
+              <span className="sm:hidden">Explore Supermarket Display Formats</span>
+            </>
+          }
+          subtitle="Explore supermarket shelves, checkout counters, end-cap displays, refrigerated sections, promotional racks, tabletop displays, grab-and-go areas, and premium product spaces inside active retail stores."
+        />
 
 
         {/* Category Tab Bar (Flex Wrap - Fully Visible Without Horizontal Scroll) */}

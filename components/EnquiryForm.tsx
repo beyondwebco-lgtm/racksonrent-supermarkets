@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Store, Utensils, HelpCircle, MessageCircle, CheckCircle2, AlertCircle } from "lucide-react";
 import { SITE_CONFIG } from "@/data/config";
+import SectionHeader from "@/components/SectionHeader";
 
 type RoleType = "gym-owner" | "wellness" | "general";
 
@@ -111,38 +112,11 @@ ${detailsText}`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Get In Touch •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            Tell Us What You Are Looking For
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Choose your role, enter your supermarket or product details, and continue directly on WhatsApp.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Get In Touch"
+          title="Tell Us What You Are Looking For"
+          subtitle="Choose your role, enter your supermarket or product details, and continue directly on WhatsApp."
+        />
 
         <div className="max-w-3xl mx-auto">
           {/* Role Selector Tabs */}

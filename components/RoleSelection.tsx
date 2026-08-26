@@ -3,6 +3,7 @@
 import React from "react";
 import { CheckCircle2, Utensils, Store } from "lucide-react";
 import { ROLE_CARDS } from "@/data/benefits";
+import SectionHeader from "@/components/SectionHeader";
 
 interface RoleSelectionProps {
   onSelectRole?: (role: "gym-owner" | "wellness") => void;
@@ -24,35 +25,10 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Role Selection •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            Choose What Best Describes You
-          </h2>
-        </div>
+        <SectionHeader
+          badge="Role Selection"
+          title="Choose What Best Describes You"
+        />
 
         {/* Two Large Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

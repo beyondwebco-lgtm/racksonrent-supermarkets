@@ -8,6 +8,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { POPULAR_CATEGORIES, CategoryItem } from "@/data/categories";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function PopularCategories() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -78,38 +79,11 @@ export default function PopularCategories() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Supermarket Display Categories •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            Popular Supermarket Product Categories
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Explore high-demand packaged foods, beverages, wellness products, personal-care items, household products, specialty foods, and emerging consumer brands displayed inside supermarkets across India.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Supermarket Display Categories"
+          title="Popular Supermarket Product Categories"
+          subtitle="Explore high-demand packaged foods, beverages, wellness products, personal-care items, household products, specialty foods, and emerging consumer brands displayed inside supermarkets across India."
+        />
 
         {/* Center-Focused Carousel Container */}
         <div className="relative max-w-5xl mx-auto px-2 sm:px-12">

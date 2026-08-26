@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle2, Store, Utensils } from "lucide-react";
 import { BENEFITS_COMPARISON } from "@/data/benefits";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function Benefits() {
   const { gymOwners, wellnessBusinesses } = BENEFITS_COMPARISON;
@@ -10,38 +11,11 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Mutual Value •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            A Simple Win for Both Sides
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Discover how space sharing delivers immediate advantages to both supermarket owners and product brands.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Mutual Value"
+          title="A Simple Win for Both Sides"
+          subtitle="Discover how space sharing delivers immediate advantages to both supermarket owners and product brands."
+        />
 
         {/* 2-Column Comparison */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

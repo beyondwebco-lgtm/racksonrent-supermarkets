@@ -1,6 +1,7 @@
 import React from "react";
 import { Layers, Grid, Store, Coffee, Gift, Box } from "lucide-react";
 import { COMPACT_SPACE_TYPES } from "@/data/spaceTypes";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function SpaceTypes() {
   const iconMap: Record<string, React.ReactNode> = {
@@ -17,39 +18,11 @@ export default function SpaceTypes() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-4 w-full mb-6">
-            {/* Left Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-
-            {/* Pill Badge */}
-            <span
-              className="
-                px-5 py-2
-                rounded-full
-                border-2 border-(--primary)
-                bg-(--accent)
-                text-(--primary) font-bold
-                text-xs sm:text-sm
-                tracking-widest uppercase
-                whitespace-nowrap
-                select-none
-              "
-            >
-              • Available Formats •
-            </span>
-
-            {/* Right Line */}
-            <div className="w-12 sm:w-20 h-px bg-(--primary) opacity-40" />
-          </div>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-(--text) md:text-5xl">
-            What Kind of Space Can Be Offered?
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-(--text-muted) md:text-lg font-medium">
-            Explore popular supermarket display options that suit eye-level shelves, end-cap racks, checkout registers, refrigerated zones, and feature corners.
-          </p>
-
-        </div>
+        <SectionHeader
+          badge="Available Formats"
+          title="What Kind of Space Can Be Offered?"
+          subtitle="Explore popular supermarket display options that suit eye-level shelves, end-cap racks, checkout registers, refrigerated zones, and feature corners."
+        />
 
         {/* Compact Grid with 6 items */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
