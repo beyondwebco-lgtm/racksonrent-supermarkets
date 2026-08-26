@@ -70,9 +70,9 @@ export default function Hero({ onSelectRole }: HeroProps) {
               </span>
             </div>
 
-            <h1 className="fluid-hero-title font-extrabold tracking-tight text-(--text)">
+            <h1 className="fluid-hero-title font-extrabold tracking-tight text-[#650000]">
               Give Your Products a Place{" "}
-              <span className="bg-(--accent) text-(--primary) px-2.5 sm:px-3 py-1 rounded-xl inline-block mt-1 border border-(--primary)/20">
+              <span className="text-[#F4E409] font-black inline-block mt-1">
                 Inside a Busy Supermarket.
               </span>
             </h1>
@@ -163,9 +163,9 @@ export default function Hero({ onSelectRole }: HeroProps) {
               <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-(--border) bg-(--background) p-2 sm:p-3 shadow-[0_24px_70px_rgba(101,0,0,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(101,0,0,0.18)] hover:border-(--accent)/60 group">
                 <div className="relative aspect-4/3 w-full rounded-xl sm:rounded-2xl overflow-hidden bg-(--accent-light)/20">
                   <video
-                    key="/videos/hero-supermarket.mp4"
-                    src="/videos/hero-supermarket.mp4"
-                    poster="/videos/hero-poster.webp"
+                    key="hero-video-v2"
+                    src="/videos/hero-supermarket.mp4?v=2"
+                    poster="/videos/hero-poster.webp?v=2"
                     autoPlay
                     loop
                     muted
@@ -173,7 +173,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                     preload="auto"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   >
-                    <source src="/videos/hero-supermarket.mp4" type="video/mp4" />
+                    <source src="/videos/hero-supermarket.mp4?v=2" type="video/mp4" />
                   </video>
                   
                   {/* Subtle Maroon Bottom Gradient Overlay */}
