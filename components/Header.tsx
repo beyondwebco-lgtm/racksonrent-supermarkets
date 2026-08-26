@@ -111,17 +111,16 @@ export default function Header({ onSelectRole }: HeaderProps) {
           <div className="flex flex-col justify-center min-w-0">
             {/* Main Brand Title */}
             <div className="flex items-baseline font-black tracking-tighter leading-none text-lg sm:text-2xl lg:text-3xl">
-              <span className="text-[#650000] font-black italic">Racks</span>
-              <span className="text-[#FAFA33] font-bold italic lowercase mx-1 text-[0.8em]" style={{ fontFamily: "Georgia, serif" }}>on</span>
-              <span className="text-[#FAFA33] font-black italic">Rent</span>
+              <span className="text-[#6B0F1A] font-black italic">Racks</span>
+              <span className="text-[#F4E409] font-black italic ml-1">on Rent</span>
             </div>
 
             {/* Tagline */}
-            <div className="flex items-center gap-1 mt-0.5 text-[7px] sm:text-[9px] lg:text-[10px] font-black uppercase tracking-[0.18em] leading-none whitespace-nowrap">
-              <span className="h-[1.5px] w-3 bg-[#650000] inline-block" />
-              <span className="text-[#650000]">SUBLET SPACE.</span>
-              <span className="text-[#FAFA33]">SHARE SUCCESS.</span>
-              <span className="h-[1.5px] w-3 bg-[#650000] inline-block" />
+            <div className="flex items-center gap-1 mt-0.5 text-[7px] sm:text-[9px] lg:text-[10px] font-extrabold uppercase tracking-[0.18em] leading-none whitespace-nowrap">
+              <span className="h-[1.5px] w-3 bg-[#6B0F1A] inline-block" />
+              <span className="text-[#6B0F1A]">SHARE SPACE.</span>
+              <span className="text-[#F4E409]">GROW TOGETHER.</span>
+              <span className="h-[1.5px] w-3 bg-[#6B0F1A] inline-block" />
             </div>
           </div>
         </Link>
@@ -205,15 +204,14 @@ export default function Header({ onSelectRole }: HeaderProps) {
               </div>
               <div className="flex flex-col justify-center">
                 <div className="flex items-baseline font-black tracking-tighter leading-none text-lg">
-                  <span className="text-[#650000] font-black italic">Racks</span>
-                  <span className="text-[#FAFA33] font-bold italic lowercase mx-1 text-[0.8em]" style={{ fontFamily: "Georgia, serif" }}>on</span>
-                  <span className="text-[#FAFA33] font-black italic">Rent</span>
+                  <span className="text-[#6B0F1A] font-black italic">Racks</span>
+                  <span className="text-[#F4E409] font-black italic ml-1">on Rent</span>
                 </div>
-                <div className="flex items-center gap-1 mt-0.5 text-[7px] sm:text-[9px] font-black uppercase tracking-[0.18em] leading-none whitespace-nowrap">
-                  <span className="h-[1.5px] w-3 bg-[#650000] inline-block" />
-                  <span className="text-[#650000]">SUBLET SPACE.</span>
-                  <span className="text-[#FAFA33]">SHARE SUCCESS.</span>
-                  <span className="h-[1.5px] w-3 bg-[#650000] inline-block" />
+                <div className="flex items-center gap-1 mt-0.5 text-[7px] sm:text-[9px] font-extrabold uppercase tracking-[0.18em] leading-none whitespace-nowrap">
+                  <span className="h-[1.5px] w-3 bg-[#6B0F1A] inline-block" />
+                  <span className="text-[#6B0F1A]">SHARE SPACE.</span>
+                  <span className="text-[#F4E409]">GROW TOGETHER.</span>
+                  <span className="h-[1.5px] w-3 bg-[#6B0F1A] inline-block" />
                 </div>
               </div>
             </Link>
