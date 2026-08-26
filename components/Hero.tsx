@@ -163,13 +163,16 @@ export default function Hero({ onSelectRole }: HeroProps) {
               <div className="animate-hero-video-entrance rounded-[1.75rem] sm:rounded-[2rem] border-2 border-(--border) bg-(--background) p-2 sm:p-3 shadow-[0_24px_70px_rgba(101,0,0,0.10)] relative overflow-hidden transition-all duration-350 hover:scale-[1.015] hover:shadow-[0_28px_80px_rgba(101,0,0,0.18)] hover:border-(--accent)/60 group">
                 <div className="relative aspect-4/3 w-full rounded-xl sm:rounded-2xl overflow-hidden bg-(--accent-light)/20">
                   <video
-                    src="/Racks_On_Rent_connects_bakery.mp4"
+                    poster="/videos/hero-poster.webp"
                     autoPlay
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  >
+                    <source src="/videos/hero-supermarket.mp4" type="video/mp4" />
+                  </video>
                   
                   {/* Subtle Maroon Bottom Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#650000]/70 via-[#650000]/15 to-transparent pointer-events-none" />
