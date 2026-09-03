@@ -245,7 +245,7 @@ export default function GymSpaceShowcase({
                 <span className="inline-flex rounded-full bg-(--accent-light) px-3.5 py-1 text-xs font-black text-(--text) border border-(--primary)/20">
                   {activeCategory.eyebrow}
                 </span>
-                <h3 className="mt-2.5 text-xl sm:text-3xl lg:text-4xl font-extrabold text-(--text) leading-snug">
+                <h3 className="mt-2.5 text-xl sm:text-3xl lg:text-4xl font-extrabold text-[#740202] leading-snug">
                   {activeCategory.title}
                 </h3>
                 <p className="mt-2.5 text-xs sm:text-base text-(--text-muted) leading-relaxed font-medium">
