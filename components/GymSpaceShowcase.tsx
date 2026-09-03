@@ -273,7 +273,7 @@ export default function GymSpaceShowcase({
 
               {/* Key Benefits */}
               <div>
-                <span className="block text-xs font-extrabold text-[#4e0000] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <span className="block text-xs font-extrabold text-(--primary) uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5" />
                   <span>Key Benefits</span>
                 </span>
@@ -301,7 +301,7 @@ export default function GymSpaceShowcase({
                 <button
                   type="button"
                   onClick={handleCtaSecondaryClick}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#4e0000] text-(--accent-light) border border-[#4e0000] px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#740202] text-(--accent-light) border border-[#740202] px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
                 >
                   <Store className="w-4 h-4 text-(--accent)" />
                   <span>{activeCategory.secondaryCta}</span>
