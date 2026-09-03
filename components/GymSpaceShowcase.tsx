@@ -301,7 +301,7 @@ export default function GymSpaceShowcase({
                 <button
                   type="button"
                   onClick={handleCtaSecondaryClick}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-(--primary) text-(--accent-light) border border-(--primary) px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#4e0000] text-(--accent-light) border border-[#4e0000] px-5 sm:px-6 py-3 font-extrabold text-xs sm:text-sm shadow-xs hover:bg-(--primary-dark) hover:text-(--accent) transition-all cursor-pointer min-h-[44px]"
                 >
                   <Store className="w-4 h-4 text-(--accent)" />
                   <span>{activeCategory.secondaryCta}</span>
