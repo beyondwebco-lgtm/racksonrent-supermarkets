@@ -21,7 +21,7 @@ export default function Footer() {
             {/* Square Rack-Icon Logo */}
             <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl overflow-hidden flex-shrink-0 bg-white p-0.5 border border-(--accent)/30 shadow-2xs">
               <Image
-                src="/images/logo.webp"
+                src="/images/navbar-logo.jpeg"
                 alt="Racks on Rent Logo Icon"
                 fill
                 sizes="(max-width: 640px) 44px, 48px"
