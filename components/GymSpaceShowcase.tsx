@@ -280,7 +280,7 @@ export default function GymSpaceShowcase({
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {activeCategory.benefits.map((benefit, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-(--text) font-extrabold">
+                    <div key={idx} className="flex items-center gap-2 text-[11px] sm:text-xs text-(--text) font-bold">
                       <CheckCircle2 className="w-4 h-4 text-(--text) flex-shrink-0" />
                       <span>{benefit}</span>
                     </div>
