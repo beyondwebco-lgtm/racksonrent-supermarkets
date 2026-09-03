@@ -16,14 +16,14 @@ export const SITE_CONFIG = {
 };
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "About Us", href: "#about" },
-  { label: "Opportunities", href: "#opportunities" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Categories", href: "#categories" },
-  { label: "Why Choose Us", href: "#why-choose-us" },
-  { label: "FAQs", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/#about" },
+  { label: "Opportunities", href: "/#opportunities" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Categories", href: "/#categories" },
+  { label: "Why Choose Us", href: "/#why-choose-us" },
+  { label: "FAQs", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 

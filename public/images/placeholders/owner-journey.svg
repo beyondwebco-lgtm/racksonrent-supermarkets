@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#FFFDF5"/>
+  <rect x="20" y="20" width="1160" height="860" rx="32" fill="#FFFFFF" stroke="#F0E2E4" stroke-width="4"/>
+  <rect x="60" y="60" width="1080" height="100" rx="20" fill="#650000"/>
+  <text x="600" y="120" font-family="sans-serif" font-size="32" font-weight="900" fill="#FAFA33" text-anchor="middle">SPACE OWNER JOURNEY — 6 SIMPLE STEPS</text>
+  
+  <!-- Step Grid -->
+  <g transform="translate(80, 200)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="50" cy="45" r="22" fill="#650000"/>
+    <text x="50" y="52" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">1</text>
+    <text x="90" y="50" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Identify Unused Space</text>
+    <text x="20" y="100" font-family="sans-serif" font-size="14" fill="#5F5F5F">Locate available shelf ends, counters, or display corners.</text>
+
+    <!-- Step 2 -->
+    <rect x="360" y="0" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="410" cy="45" r="22" fill="#650000"/>
+    <text x="410" y="52" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">2</text>
+    <text x="450" y="50" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">List Your Location</text>
+    <text x="380" y="100" font-family="sans-serif" font-size="14" fill="#5F5F5F">Submit store location and display dimensions on Racks on Rent.</text>
+
+    <!-- Step 3 -->
+    <rect x="720" y="0" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="770" cy="45" r="22" fill="#650000"/>
+    <text x="770" y="52" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">3</text>
+    <text x="810" y="50" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Connect With Brands</text>
+    <text x="740" y="100" font-family="sans-serif" font-size="14" fill="#5F5F5F">Review requests from verified retail brands and startups.</text>
+
+    <!-- Step 4 -->
+    <rect x="0" y="220" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="50" cy="265" r="22" fill="#650000"/>
+    <text x="50" y="272" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">4</text>
+    <text x="90" y="270" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Agree Rental Terms</text>
+    <text x="20" y="320" font-family="sans-serif" font-size="14" fill="#5F5F5F">Select daily, weekly, or monthly rental duration.</text>
+
+    <!-- Step 5 -->
+    <rect x="360" y="220" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="410" cy="265" r="22" fill="#650000"/>
+    <text x="410" y="272" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">5</text>
+    <text x="450" y="270" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Setup Display Rack</text>
+    <text x="380" y="320" font-family="sans-serif" font-size="14" fill="#5F5F5F">Position brand display racks in your high-footfall area.</text>
+
+    <!-- Step 6 -->
+    <rect x="720" y="220" width="320" height="180" rx="16" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+    <circle cx="770" cy="265" r="22" fill="#650000"/>
+    <text x="770" y="272" font-family="sans-serif" font-size="18" font-weight="900" fill="#FAFA33" text-anchor="middle">6</text>
+    <text x="810" y="270" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Earn Recurring Rent</text>
+    <text x="740" y="320" font-family="sans-serif" font-size="14" fill="#5F5F5F">Earn steady monthly rental income from your unused space.</text>
+  </g>
+
+  <!-- Footer Banner -->
+  <rect x="60" y="740" width="1080" height="100" rx="20" fill="#FFFBCC" stroke="#FAFA33" stroke-width="2"/>
+  <text x="600" y="798" font-family="sans-serif" font-size="24" font-weight="900" fill="#650000" text-anchor="middle">Turn Every Unused Corner Into Passive Revenue with Racks on Rent</text>
+</svg>
