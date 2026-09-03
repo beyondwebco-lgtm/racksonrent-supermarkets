@@ -273,7 +273,7 @@ export default function GymSpaceShowcase({
 
               {/* Key Benefits */}
               <div>
-                <span className="block text-xs font-extrabold text-(--primary) uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <span className="block text-xs font-extrabold text-[#740202] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5" />
                   <span>Key Benefits</span>
                 </span>
